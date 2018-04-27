@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.UKwhowantstobeamillionaire" name="Who Wants To Be A Millionaire UK" version="1.5" provider-name="">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Who Wants To Be A Millionaire</summary>
+		<description lang="en">THE WORLD’S MOST SUCCESSFUL GAME SHOW!   Who Wants To Be A Millionaire? (UK) is a ground-breaking television game show which has captured the imagination and hearts of millions around the world: a true television phenomenon. With weekly clips of every win, every loss, every celebration and every heartbreak.</description>
+		<platform>all</platform>
+		<news></news>
+		<genre>uk</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>

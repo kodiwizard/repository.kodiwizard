@@ -1,0 +1,11 @@
+Version="0.26.11.2017"
+*		Found some errors with the code and fixed them
+*		Hopefully all thumbnails will now load too
+
+
+Version="0.25.11.2017"
+*		Python code tidyup
+
+
+Version="0.19.11.2017"
+*		Intial test release

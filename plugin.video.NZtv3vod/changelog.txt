@@ -1,0 +1,27 @@
+Version 1.0.9
+* Fixed a small code error which was causing addon to fetch same results more than once
+
+Version 1.0.8
+* Altered The code so addon runs a bit quicker
+
+Version 1.0.7
+*
+
+Version 1.0.6
+* Reverted back to code that pulls video links with ads until I find more suitable fix
+
+Version 1.0.5
+* Disabled install of addon until a fix is found
+
+Version 1.0.3
+* Update twitter/social media handles :)
+
+Version 1.0.2
+* Updated scraper to pull video link without ads
+* Also plays 720p instead of sd
+
+Version 1.0.1
+* Fixed video name showing as content.m3u8 instead of actual show name
+
+Version 1.0.0
+* Intial Release
