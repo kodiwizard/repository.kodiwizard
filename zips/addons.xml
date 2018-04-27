@@ -17,6 +17,93 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.CommunityPlaylists" name="Community Playlists" version="10.4" provider-name="Team X Kodi">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.nanscrapers" version="0.5.5" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.urlresolver" version="1.2.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en">Community Playlists</summary>
+      <description lang="en">Community Playlists discover Playlists that users have created I do not own any links / I am not responsible for what they provide I Just created a platform so users can easy access playlists all in one location  To get your Playlist/list on addon contact us at  on twitter @teamxkodi Thanks to midraal / Team BOB for Base</description>
+      <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+      <platform>all</platform>
+        <website>www.noobsandnerds.com</website>
+        <video_guide>xtOqLY5PJDY</video_guide>
+    </extension>
+</addon>
+
+<addon id="plugin.video.freeviewnz" name="Freeview -NZ" version="4.0" provider-name="Team X">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Freeview - New Zealand</summary>
+    <description lang="en">Free to air channels (Freeview) From New Zealand from official sources.  Contact us on twitter @teamxkodi</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.kidsyoutube" name="Youtube Kids" version="3.0" provider-name="Team X">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.nanscrapers" version="0.5.5" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Kids Youtube Videos</summary>
+		<description lang="en">Get Access to Loads of Kids Content from Youtube </description>
+		<disclaimer lang="en">Third party unoffical Kodi Addon not made or endorsed by Youtube</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.NZtv3vod"
+       name="NZ TV3 VOD Content"
+       version="1.0.6"
+       provider-name="@Kiwi_man82 and @teamxkodi - TeamX">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Unoffical New Zealand TV3 VOD addon</summary>
+    <language>en</language>
+    <description lang="en">This addon scrapes the New Zealand TV3 website for the VOD content and brings it to you on kodi - TeamX do not host any of the content found in this addon, all we did was bring this content to you from the internet.  Shout outs to NoobsAndNerds for pointing me in the right direction (whufclee) and Pipcan for the base code of this addon along with his regex tutorial on Youtube</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="repository.kodiwizard" name="Kodi Wizard" version="0.0.1" provider-name="Kodi Wizard">
 	<extension point="xbmc.addon.repository" name="Kodi Wizard">
 		<dir>

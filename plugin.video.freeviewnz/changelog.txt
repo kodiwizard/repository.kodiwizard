@@ -1,0 +1,14 @@
+V2.0.0
+Re-Release of addon with offical sources
+
+----------
+V1.1
+
+Addon Code updated 
+*Now works without community playlists installed
+------
+
+V1.0
+
+Addon Released 
+

@@ -1,0 +1,963 @@
+
+service.py,0
+
+resources/__init__.py,0
+
+resources/lib/util/__init__.py,0
+
+resources/lib/util/url.py,799
+import osos20,734
+import urlliburllib21,744
+import syssys22,758
+import urllib2urllib223,769
+import urlparseurlparse24,784
+import randomrandom25,800
+import xbmcxbmc27,815
+import xbmcaddonxbmcaddon28,827
+import xbmcvfsxbmcvfs29,844
+import kodingkoding30,859
+import requestsrequests31,873
+from resources.lib.plugin import run_hookrun_hook32,889
+from language import get_string as __33,931
+def __replace_gif(url):__replace_gif35,969
+def replace_url(url, replace_gif=True):replace_url78,2586
+def get_addon_url(mode, url=""):get_addon_url95,3115
+def proxy_get(url, check, headers=None, data=None):proxy_get104,3328
+def proxy_get_raw(url, headers=None, data=None):proxy_get_raw142,4467
+def get_proxy_url():get_proxy_url158,4925
+def randomagent():randomagent177,5791
+
+resources/lib/util/messages.py,265
+import xbmcaddonxbmcaddon21,739
+import randomrandom22,756
+from resources.lib.plugin import run_hookrun_hook23,770
+def get_link_message():get_link_message26,814
+    import randomrandom30,919
+def get_searching_message(preset):get_searching_message50,1326
+
+resources/lib/util/context.py,890
+from resources.lib.util.url import get_addon_urlget_addon_url20,795
+from resources.lib.util.views import save_view_modesave_view_mode21,844
+import resources.lib.external.tvdb_api as tvdb_apiresources22,896
+import resources.lib.external.tvdb_api as tvdb_apilib22,896
+import resources.lib.external.tvdb_api as tvdb_apiexternal22,896
+import resources.lib.external.tvdb_api as tvdb_apitvdb_api22,896
+import xbmcxbmc23,947
+import xbmcaddonxbmcaddon24,959
+from language import get_string as __25,976
+import __builtin____builtin__26,1013
+ADDON = xbmcaddon.Addon()ADDON28,1033
+    LANG = xbmc.getLanguage(LANG30,1107
+    LANG = ADDON.getSetting("language_id")LANG33,1166
+tvdb = tvdb_api.Tvdb(tvdb35,1210
+    language=LANG,language37,1262
+    cache=xbmc.translatePath(ADDON.getAddonInfo("profile")))cache38,1281
+def get_context_items(item):get_context_items41,1344
+
+resources/lib/util/xml.py,0
+
+resources/lib/util/info.py,3715
+import copycopy19,783
+import rere20,795
+import xbmcxbmc22,806
+import xbmcaddonxbmcaddon23,818
+import timetime24,835
+import requestsrequests25,847
+import resources.lib.external.tmdbsimple as tmdbsimpleresources26,863
+import resources.lib.external.tmdbsimple as tmdbsimplelib26,863
+import resources.lib.external.tmdbsimple as tmdbsimpleexternal26,863
+import resources.lib.external.tmdbsimple as tmdbsimpletmdbsimple26,863
+import resources.lib.external.tvdb_api as tvdb_apiresources27,918
+import resources.lib.external.tvdb_api as tvdb_apilib27,918
+import resources.lib.external.tvdb_api as tvdb_apiexternal27,918
+import resources.lib.external.tvdb_api as tvdb_apitvdb_api27,918
+from resources.lib.plugin import run_hookrun_hook28,969
+from koding import routeroute29,1011
+import kodingkoding30,1036
+import picklepickle31,1050
+import __builtin____builtin__32,1064
+from language import get_string as __33,1083
+ADDON = xbmcaddon.Addon()ADDON35,1121
+TRAKT_API_ENDPOINT = "https://api.trakt.tv"TRAKT_API_ENDPOINT36,1147
+TRAKT_CLIENT_ID = __builtin__.trakt_client_idTRAKT_CLIENT_ID37,1191
+TRAKT_CLIENT_SECRET = __builtin__.trakt_client_secretTRAKT_CLIENT_SECRET38,1237
+TTL = 1440 * 31TTL39,1291
+    LANG = xbmc.getLanguage(LANG42,1356
+    LANG = ADDON.getSetting("language_id")LANG45,1415
+tvdb = tvdb_api.Tvdb(tvdb47,1459
+    language=LANG,language49,1511
+    cache=xbmc.translatePath(xbmcaddon.Addon().getSetting("cache_folder")))cache50,1530
+def get_movie_metadata(movie_id):get_movie_metadata53,1608
+def __convert_trakt_movie_metadata(movie, genres_dict=None):__convert_trakt_movie_metadata113,4257
+def _convert_tmdb_movie_metadata(movie, imdb_id, genres_dict=None):_convert_tmdb_movie_metadata149,5499
+def make_trailer(trailer_url):make_trailer196,7275
+def get_show_metadata(show_id):get_show_metadata209,7632
+def _convert_trakt_tvshow_metadata(show, genres_dict=None):_convert_trakt_tvshow_metadata256,9491
+def _convert_tvdb_tvshow_metadata(tvdb_show, imdb_id, banners=True,_convert_tvdb_tvshow_metadata295,10832
+def get_episode_metadata(show_id, season_num, episode_num):get_episode_metadata329,12109
+def _convert_trakt_episode_metadata(show_metadata, episode, banners=True):_convert_trakt_episode_metadata393,14912
+def _convert_tvdb_season_metadata(show_metadata,_convert_tvdb_season_metadata417,15806
+def _convert_tvdb_episode_metadata(imdb_id , season_metadata, episode,_convert_tvdb_episode_metadata439,16523
+def fetch_from_db(identifier, provider, lang):fetch_from_db465,17506
+    import kodingkoding475,17792
+def fetch_episode_from_db(identifier, season, episode, provider, lang):fetch_episode_from_db513,18935
+    import kodingkoding525,19342
+def save_to_db(identifier, provider, lang, meta):save_to_db568,20620
+    import timetime577,20893
+    import kodingkoding578,20909
+def save_episode_to_db(identifier, season, episode, provider, lang, meta):save_episode_to_db593,21287
+    import timetime604,21680
+    import kodingkoding605,21696
+def tmdb_movie_genres(lang):tmdb_movie_genres626,22186
+def trakt_genres(genre_type):trakt_genres705,24004
+def tv_get_extended_info(imdb):tv_get_extended_info723,24590
+    import xbmcxbmc724,24622
+def season_get_extended_info(item):season_get_extended_info746,25395
+    import xbmcxbmc747,25431
+def episode_get_extended_info(item):episode_get_extended_info773,26325
+    import xbmcxbmc774,26362
+def movie_get_extended_info(imdb):movie_get_extended_info799,27349
+    import xbmcxbmc800,27384
+def parse_year(text):parse_year810,27780
+def get_info(items, dialog=None):get_info818,27951
+    from resources.lib.util.xml import JenItemJenItem819,27985
+
+resources/lib/util/views.py,382
+import xbmcxbmc21,799
+import xbmcguixbmcgui22,811
+import xbmcaddonxbmcaddon23,826
+import kodingkoding24,843
+from koding import routeroute25,857
+from language import get_string as __26,882
+view_spec = {view_spec28,920
+def get_view_id():get_view_id41,1125
+def save_view_mode(content):save_view_mode53,1432
+def set_list_view_mode(content):set_list_view_mode71,2032
+
+resources/lib/__init__.py,0
+
+resources/lib/plugin.py,1229
+import xbmcxbmc1,0
+import abcabc2,12
+abstractstaticmethod = abc.abstractmethodabstractstaticmethod5,25
+class abstractclassmethod(classmethod):abstractclassmethod8,69
+    __isabstractmethod__ = True__isabstractmethod__9,109
+    def __init__(self, callable):__init__11,142
+class Plugin():Plugin16,283
+    __metaclass__ = abc.ABCMeta__metaclass__17,299
+    name = "Plugin"name18,331
+    priority = 100priority19,351
+    def get_xml(self, url):get_xml21,371
+    def get_xml_uncached(self, url):get_xml_uncached24,413
+    def get_link_message(self):get_link_message27,464
+    def get_searching_message(self, preset):get_searching_message30,510
+    def process_item(self, item_xml):process_item33,569
+    def get_theme_list(self):get_theme_list36,621
+    def replace_url(self, url):replace_url39,665
+    def get_sources(self, item):get_sources42,711
+    def get_info(self, items, dialog):get_info45,758
+    def do_search(self, search_term):do_search48,811
+    def display_list(self, items, content_type):display_list51,863
+    def first_run_wizard(self):first_run_wizard54,926
+plugin_cache = {}plugin_cache58,973
+def get_plugins():get_plugins61,993
+def run_hook(*args):run_hook74,1356
+
+resources/lib/player.py,568
+import xbmcxbmc1,0
+import xbmcguixbmcgui2,12
+import kodingkoding3,27
+import syssys4,41
+import xbmcpluginxbmcplugin5,52
+class JenPlayer(xbmc.Player):JenPlayer8,72
+    tablespec = {tablespec9,102
+    def __init__(self, resume=False):__init__22,407
+    def setItem(self, item):setItem27,539
+    def play(self, url, item):play32,711
+    def onPlayBackStarted(self):onPlayBackStarted42,1008
+    def keep_alive(self):keep_alive47,1206
+    def onPlayBackEnded(self):onPlayBackEnded79,2217
+    def onPlayBackStopped(self):onPlayBackStopped101,2880
+
+resources/lib/search.py,1491
+import requestsrequests20,772
+import __builtin____builtin__21,788
+import kodingkoding22,807
+import xbmcxbmc23,821
+import xbmcaddonxbmcaddon24,833
+from koding import routeroute25,850
+from resources.lib.util.info import get_infoget_info26,875
+from resources.lib.util.url import get_addon_url, replace_urlget_addon_url27,920
+from resources.lib.util.url import get_addon_url, replace_urlreplace_url27,920
+from resources.lib.util.xml import JenList, display_listJenList28,982
+from resources.lib.util.xml import JenList, display_listdisplay_list28,982
+from resources.lib.plugin import run_hookrun_hook29,1039
+from language import get_string as __30,1081
+theme = xbmcaddon.Addon().getSetting('theme')theme32,1119
+    fanart = JenList.set_theme(theme)fanart34,1218
+    fanart = xbmcaddon.Addon().getAddonInfo('fanart')fanart36,1262
+icon = xbmcaddon.Addon().getAddonInfo('icon')icon38,1317
+def search():search42,1387
+def do_search(term=None):do_search80,2502
+    import osos81,2528
+    import xbmcxbmc82,2542
+    import xbmcguixbmcgui83,2558
+    import timetime84,2577
+    import datetimedatetime85,2593
+    import urllib2urllib286,2613
+    import shutilshutil87,2632
+            import xbmcguixbmcgui129,4301
+                import xbmcxbmc146,5018
+def add_search():add_search177,6303
+def remove_search(term):remove_search186,6596
+def clear_search():clear_search192,6751
+def get_xml(link):get_xml197,6890
+    import timetime198,6909
+
+resources/lib/sources.py,1781
+import randomrandom19,736
+import nanscrapersnanscrapers21,751
+import requestsrequests22,770
+import xbmcaddonxbmcaddon23,786
+import xbmcguixbmcgui24,803
+import xbmcxbmc25,818
+import kodingkoding26,830
+from koding import routeroute27,844
+import syssys28,869
+import xbmcpluginxbmcplugin29,880
+from resources.lib.util.xml import JenItem, JenListJenItem31,899
+from resources.lib.util.xml import JenItem, JenListJenList31,899
+from resources.lib.util.messages import get_link_message, get_searching_messageget_link_message32,951
+from resources.lib.util.messages import get_link_message, get_searching_messageget_searching_message32,951
+from resources.lib.util.info import get_infoget_info33,1031
+from resources.lib.player import JenPlayerJenPlayer34,1076
+from resources.lib.plugin import run_hookrun_hook35,1119
+from language import get_string as __36,1161
+ADDON = xbmcaddon.Addon()ADDON38,1199
+DIALOG = xbmcgui.Dialog()DIALOG39,1225
+class Sources(object):Sources42,1253
+    def __init__(self):__init__45,1341
+    def get_sources(title,get_sources50,1428
+    def get_music_sources(title,get_music_sources291,10509
+    def youtube_resolve(url):youtube_resolve434,16266
+    def sort_function(item):sort_function454,16868
+    def __determine_quality(quality_string):__determine_quality488,17834
+    def __check_skip_pairing(scraper_link):__check_skip_pairing502,18217
+def choose_quality(link, name=None, selected_link=None):choose_quality515,18700
+    import rere523,18921
+def get_sources(item):get_sources583,20848
+def queue_source(item, depth=0):queue_source749,26895
+    from resources.lib.util.url import get_addon_urlget_addon_url755,27017
+def clear_queue():clear_queue782,28023
+def play_queue():play_queue791,28305
+
+resources/lib/plugins/__init__.py,245
+import osos1,0
+import os.pathos2,10
+import os.pathpath2,10
+files = os.listdir(os.path.dirname(__file__))files3,25
+__all__ = [filename[:-3] for filename in files if not filename.startswith('__') and filename.endswith('.py')]__all__4,71
+
+resources/lib/plugins/bob.py,844
+import __builtin____builtin__3,25
+import picklepickle4,44
+import syssys5,58
+import kodingkoding7,70
+import xbmcaddonxbmcaddon8,84
+import xbmcpluginxbmcplugin9,101
+from ..plugin import PluginPlugin10,119
+from resources.lib.util.url import get_addon_urlget_addon_url11,147
+from language import get_string as __12,196
+ADDON = xbmcaddon.Addon()ADDON16,282
+class BoB(Plugin):BoB19,310
+    name = "BoB"name20,329
+    def first_run_wizard(self):first_run_wizard22,347
+        import xbmcguixbmcgui23,379
+    def get_theme_list(self):get_theme_list76,2348
+    def display_list(self, items, content_type):display_list148,5671
+    def replace_url(self, url):replace_url190,7396
+    def get_link_message(self, *args):get_link_message207,8519
+    def get_searching_message(self, preset):get_searching_message277,10694
+
+resources/lib/external/__init__.py,0
+
+resources/lib/external/requests_cache/__init__.py,98
+__docformat__ = 'restructuredtext'__docformat__25,626
+__version__ = '0.4.10'__version__26,662
+
+resources/lib/external/requests_cache/backends/__init__.py,444
+from .base import BaseCacheBaseCache11,171
+registry = {registry13,202
+from .sqlite import DbCacheDbCache17,247
+    from .mongo import MongoCacheMongoCache22,316
+    MongoCache = NoneMongoCache25,430
+    from .redis import RedisCacheRedisCache28,461
+    RedisCache = NoneRedisCache31,553
+def create_backend(backend_name, cache_name, options):create_backend34,580
+def _get_default_backend_name():_get_default_backend_name44,956
+
+resources/lib/external/requests_cache/backends/storage/__init__.py,0
+
+resources/lib/external/requests_cache/backends/storage/mongodict.py,766
+from collections import MutableMappingMutableMapping9,218
+    import cPickle as picklepickle11,264
+    import picklepickle13,315
+from pymongo import ConnectionConnection15,336
+class MongoDict(MutableMapping):MongoDict18,372
+    def __init__(self, db_name,__init__21,487
+    def __getitem__(self, key):__getitem__37,1202
+    def __setitem__(self, key, item):__setitem__43,1381
+    def __delitem__(self, key):__delitem__46,1480
+    def __len__(self):__len__53,1689
+    def __iter__(self):__iter__56,1755
+    def clear(self):clear60,1866
+    def __str__(self):__str__63,1922
+class MongoPickleDict(MongoDict):MongoPickleDict67,1990
+    def __setitem__(self, key, item):__setitem__70,2104
+    def __getitem__(self, key):__getitem__73,2220
+
+resources/lib/external/requests_cache/backends/storage/dbdict.py,1232
+from collections import MutableMappingMutableMapping9,205
+import sqlite3 as sqlitesqlite10,245
+from contextlib import contextmanagercontextmanager11,271
+    import threadingthreading13,316
+    import dummy_threading as threadingthreading15,359
+    import cPickle as picklepickle17,406
+    import picklepickle19,457
+from resources.lib.external.requests_cache.compat import bytesbytes21,478
+class DbDict(MutableMapping):DbDict24,546
+    def __init__(self, filename, table_name='data', fast_save=False, **options):__init__38,1047
+        import xbmcxbmc48,1671
+    def connection(self, commit_on_success=False):connection64,2179
+    def commit(self, force=False):commit82,2878
+    def bulk_commit(self):bulk_commit93,3251
+    def __getitem__(self, key):__getitem__115,3873
+    def __setitem__(self, key, item):__setitem__123,4169
+    def __delitem__(self, key):__delitem__128,4391
+    def __iter__(self):__iter__135,4656
+    def __len__(self):__len__141,4868
+    def clear(self):clear146,5061
+    def __str__(self):__str__152,5305
+class DbPickleDict(DbDict):DbPickleDict156,5373
+    def __setitem__(self, key, item):__setitem__159,5478
+    def __getitem__(self, key):__getitem__163,5653
+
+resources/lib/external/requests_cache/backends/storage/redisdict.py,638
+from collections import MutableMappingMutableMapping9,217
+    import cPickle as picklepickle11,263
+    import picklepickle13,314
+from redis import StrictRedis as RedisRedis14,333
+class RedisDict(MutableMapping):RedisDict17,377
+    def __init__(self, namespace, collection_name='redis_dict_data',__init__20,494
+    def __getitem__(self, key):__getitem__43,1420
+    def __setitem__(self, key, item):__setitem__49,1629
+    def __delitem__(self, key):__delitem__53,1785
+    def __len__(self):__len__57,1921
+    def __iter__(self):__iter__60,2000
+    def clear(self):clear64,2126
+    def __str__(self):__str__67,2198
+
+resources/lib/external/requests_cache/backends/base.py,1667
+from datetime import datetimedatetime10,244
+import hashlibhashlib11,275
+from copy import copycopy12,291
+from io import BytesIOBytesIO13,314
+import requestsrequests15,340
+from ..compat import is_py2is_py217,359
+_DEFAULT_HEADERS = requests.utils.default_headers()_DEFAULT_HEADERS20,392
+class BaseCache(object):BaseCache23,449
+    def __init__(self, *args, **kwargs):__init__29,699
+    def save_response(self, key, response):save_response36,975
+    def add_key_mapping(self, new_key, key_to_response):add_key_mapping47,1366
+    def get_response_and_time(self, key, default=(None, None)):get_response_and_time58,1786
+    def delete(self, key):delete76,2490
+    def delete_url(self, url):delete_url91,3037
+    def clear(self):clear97,3278
+    def has_key(self, key):has_key103,3403
+    def has_url(self, url):has_url108,3575
+    def _url_to_key(self, url):_url_to_key114,3779
+    _response_attrs = ['_content', 'url', 'status_code', 'cookies',_response_attrs118,3939
+    _raw_response_attrs = ['_original_response', 'decode_content', 'headers',_raw_response_attrs121,4085
+    def reduce_response(self, response, seen=None):reduce_response124,4236
+    def _picklable_field(self, response, name):_picklable_field142,4866
+    def restore_response(self, response, seen=None):restore_response156,5444
+    def create_key(self, request):create_key173,6067
+    def __str__(self):__str__186,6609
+class _Store(object):_Store191,6752
+class _RawStore(object):_RawStore195,6789
+    def release_conn(self):release_conn197,6847
+    def read(self, chunk_size=1):read201,6930
+def _to_bytes(s, encoding='utf-8'):_to_bytes207,7146
+
+resources/lib/external/requests_cache/backends/redis.py,228
+from .base import BaseCacheBaseCache9,160
+from .storage.redisdict import RedisDictRedisDict10,189
+class RedisCache(BaseCache):RedisCache13,235
+    def __init__(self, namespace='requests-cache', **options):__init__16,308
+
+resources/lib/external/requests_cache/backends/mongo.py,324
+from .base import BaseCacheBaseCache9,160
+from .storage.mongodict import MongoDict, MongoPickleDictMongoDict10,189
+from .storage.mongodict import MongoDict, MongoPickleDictMongoPickleDict10,189
+class MongoCache(BaseCache):MongoCache13,252
+    def __init__(self, db_name='requests-cache', **options):__init__16,325
+
+resources/lib/external/requests_cache/backends/sqlite.py,274
+from .base import BaseCacheBaseCache9,163
+from .storage.dbdict import DbDict, DbPickleDictDbDict10,192
+from .storage.dbdict import DbDict, DbPickleDictDbPickleDict10,192
+class DbCache(BaseCache):DbCache13,246
+    def __init__(self, location='cache',__init__19,421
+
+resources/lib/external/requests_cache/compat.py,3194
+import syssys8,126
+_ver = sys.version_info_ver15,192
+is_py2 = (_ver[0] == 2)is_py218,235
+is_py3 = (_ver[0] == 3)is_py321,278
+is_py30 = (is_py3 and _ver[1] == 0)is_py3024,322
+is_py31 = (is_py3 and _ver[1] == 1)is_py3127,378
+is_py32 = (is_py3 and _ver[1] == 2)is_py3230,434
+is_py33 = (is_py3 and _ver[1] == 3)is_py3333,490
+is_py34 = (is_py3 and _ver[1] == 4)is_py3436,546
+is_py27 = (is_py2 and _ver[1] == 7)is_py2739,602
+is_py26 = (is_py2 and _ver[1] == 6)is_py2642,658
+is_py25 = (is_py2 and _ver[1] == 5)is_py2545,714
+is_py24 = (is_py2 and _ver[1] == 4)   # I'm assuming this is not by choice.is_py2448,770
+_ver = sys.version.lower()_ver57,911
+is_pypy = ('pypy' in _ver)is_pypy59,941
+is_jython = ('jython' in _ver)is_jython60,969
+is_ironpython = ('iron' in _ver)is_ironpython61,1001
+is_cpython = not any((is_pypy, is_jython, is_ironpython))is_cpython64,1073
+is_windows = 'win32' in str(sys.platform).lower()is_windows67,1159
+is_linux = ('linux' in str(sys.platform).lower())is_linux70,1241
+is_osx = ('darwin' in str(sys.platform).lower())is_osx71,1292
+is_hpux = ('hpux' in str(sys.platform).lower())   # Complete guess.is_hpux72,1342
+is_solaris = ('solar==' in str(sys.platform).lower())   # Complete guess.is_solaris73,1411
+    from urllib import quote, unquote, urlencodequote82,1545
+    from urllib import quote, unquote, urlencodeunquote82,1545
+    from urllib import quote, unquote, urlencodeurlencode82,1545
+    from urlparse import urlparse, urlunparse, urljoin, urlspliturlparse83,1595
+    from urlparse import urlparse, urlunparse, urljoin, urlspliturlunparse83,1595
+    from urlparse import urlparse, urlunparse, urljoin, urlspliturljoin83,1595
+    from urlparse import urlparse, urlunparse, urljoin, urlspliturlsplit83,1595
+    from urllib2 import parse_http_listparse_http_list84,1661
+    import cookielibcookielib85,1702
+    from StringIO import StringIOStringIO86,1724
+    bytes = strbytes87,1759
+    str = unicodestr88,1776
+    basestring = basestringbasestring89,1795
+    from urllib.parse import urlparse, urlunparse, urljoin, urlsplit, urlencode, quote, unquoteurlparse94,1844
+    from urllib.parse import urlparse, urlunparse, urljoin, urlsplit, urlencode, quote, unquoteurlunparse94,1844
+    from urllib.parse import urlparse, urlunparse, urljoin, urlsplit, urlencode, quote, unquoteurljoin94,1844
+    from urllib.parse import urlparse, urlunparse, urljoin, urlsplit, urlencode, quote, unquoteurlsplit94,1844
+    from urllib.parse import urlparse, urlunparse, urljoin, urlsplit, urlencode, quote, unquoteurlencode94,1844
+    from urllib.parse import urlparse, urlunparse, urljoin, urlsplit, urlencode, quote, unquotequote94,1844
+    from urllib.parse import urlparse, urlunparse, urljoin, urlsplit, urlencode, quote, unquoteunquote94,1844
+    from urllib.request import parse_http_listparse_http_list95,1941
+    from http import cookiejar as cookielibcookielib96,1989
+    from http.cookies import SimpleCookieSimpleCookie97,2034
+    from io import StringIOStringIO98,2077
+    str = strstr100,2108
+    bytes = bytesbytes101,2123
+    basestring = (str,bytes)basestring102,2142
+
+resources/lib/external/requests_cache/core.py,1827
+import collectionscollections9,185
+from contextlib import contextmanagercontextmanager10,205
+from datetime import datetime, timedeltadatetime11,244
+from datetime import datetime, timedeltatimedelta11,244
+from operator import itemgetteritemgetter12,286
+import requestsrequests14,321
+from requests import Session as OriginalSessionOriginalSession15,338
+from requests.hooks import dispatch_hookdispatch_hook16,387
+from ..requests_cache import backendsbackends18,431
+from ..requests_cache.compat import basestringbasestring19,470
+    ver = tuple(map(int, requests.__version__.split(".")))ver22,526
+        dispatch_hook = lambda key, hooks, hook_data, *a, **kw: hook_datadispatch_hook28,707
+class CachedSession(OriginalSession):CachedSession32,799
+    def __init__(self, cache_name='cache', backend=None, expire_after=None,__init__36,902
+    def send(self, request, **kwargs):send88,4141
+        def send_request_and_cache_response():send_request_and_cache_response97,4489
+    def request(self, method, url, params=None, data=None, **kwargs):request128,5878
+    def cache_disabled(self):cache_disabled146,6542
+    def __repr__(self):__repr__161,6937
+def install_cache(cache_name='cache', backend=None, expire_after=None,install_cache171,7254
+    class _ConfiguredCachedSession(session_factory):_ConfiguredCachedSession184,7886
+        def __init__(self):__init__185,7940
+configure = install_cacheconfigure200,8444
+def uninstall_cache():uninstall_cache203,8475
+def disabled():disabled210,8632
+def enabled(*args, **kwargs):enabled232,9101
+def get_cache():get_cache253,9531
+def clear():clear259,9680
+def _patch_session_factory(session_factory=CachedSession):_patch_session_factory265,9773
+def _normalize_parameters(params, ignored_params=None):_normalize_parameters269,9905
+
+resources/lib/external/tmdbsimple/__init__.py,2194
+__title__ = 'tmdbsimple'__title__19,624
+__version__ = '1.3.0'__version__20,650
+__author__ = 'Celia Oakley'__author__21,673
+__copyright__ = 'Copyright (c) 2013-1014 Celia Oakley'__copyright__22,702
+__license__ = 'GPLv3'__license__23,758
+import osos25,783
+from .account import Account, Authentication, GuestSessions, ListsAccount26,794
+from .account import Account, Authentication, GuestSessions, ListsAuthentication26,794
+from .account import Account, Authentication, GuestSessions, ListsGuestSessions26,794
+from .account import Account, Authentication, GuestSessions, ListsLists26,794
+from .base import APIKeyErrorAPIKeyError27,862
+from .changes import ChangesChanges28,893
+from .configuration import Configuration, Certifications, TimezonesConfiguration29,923
+from .configuration import Configuration, Certifications, TimezonesCertifications29,923
+from .configuration import Configuration, Certifications, TimezonesTimezones29,923
+from .discover import DiscoverDiscover30,992
+from .find import FindFind31,1024
+from .genres import GenresGenres32,1048
+from .movies import Movies, Collections, Companies, Keywords, ReviewsMovies33,1076
+from .movies import Movies, Collections, Companies, Keywords, ReviewsCollections33,1076
+from .movies import Movies, Collections, Companies, Keywords, ReviewsCompanies33,1076
+from .movies import Movies, Collections, Companies, Keywords, ReviewsKeywords33,1076
+from .movies import Movies, Collections, Companies, Keywords, ReviewsReviews33,1076
+from .people import People, Credits, JobsPeople34,1147
+from .people import People, Credits, JobsCredits34,1147
+from .people import People, Credits, JobsJobs34,1147
+from .search import SearchSearch35,1190
+from .tv import TV, TV_Seasons, TV_Episodes, NetworksTV36,1218
+from .tv import TV, TV_Seasons, TV_Episodes, NetworksTV_Seasons36,1218
+from .tv import TV, TV_Seasons, TV_Episodes, NetworksTV_Episodes36,1218
+from .tv import TV, TV_Seasons, TV_Episodes, NetworksNetworks36,1218
+import __builtin____builtin__37,1273
+def _get_env_key(key):_get_env_key39,1295
+API_KEY = _get_env_key('TMDB_API_KEY')API_KEY45,1426
+API_VERSION = '3'API_VERSION46,1466
+
+resources/lib/external/tmdbsimple/people.py,1013
+from .base import TMDBTMDB15,296
+class People(TMDB):People17,322
+    BASE_PATH = 'person'BASE_PATH23,441
+    URLS = {URLS24,467
+    def __init__(self, id=0):__init__36,844
+    def info(self, **kwargs):info40,939
+    def movie_credits(self, **kwargs):movie_credits56,1407
+    def tv_credits(self, **kwargs):tv_credits73,1937
+    def combined_credits(self, **kwargs):combined_credits90,2458
+    def external_ids(self, **kwargs):external_ids111,3223
+    def images(self, **kwargs):images124,3603
+    def changes(self, **kwargs):changes137,3965
+    def popular(self, **kwargs):popular159,4785
+    def latest(self, **kwargs):latest176,5272
+class Credits(TMDB):Credits189,5616
+    BASE_PATH = 'credit'BASE_PATH195,5738
+    URLS = {URLS196,5764
+    def __init__(self, credit_id):__init__200,5820
+    def info(self, **kwargs):info204,5935
+class Jobs(TMDB):Jobs229,6954
+    BASE_PATH = 'job'BASE_PATH235,7067
+    URLS = {URLS236,7090
+    def list(self, **kwargs):list240,7139
+
+resources/lib/external/tmdbsimple/tv.py,1965
+from .base import TMDBTMDB15,304
+class TV(TMDB):TV18,332
+    BASE_PATH = 'tv'BASE_PATH24,439
+    URLS = {URLS25,461
+    def __init__(self, id=0):__init__39,894
+    def info(self, **kwargs):info43,985
+    def credits(self, **kwargs):credits61,1537
+    def external_ids(self, **kwargs):external_ids80,2188
+    def images(self, **kwargs):images96,2644
+    def rating(self, **kwargs):rating114,3207
+    def translations(self, **kwargs):translations137,3868
+    def videos(self, **kwargs):videos151,4322
+    def on_the_air(self, **kwargs):on_the_air168,4805
+    def airing_today(self, **kwargs):airing_today187,5415
+    def top_rated(self, **kwargs):top_rated206,6072
+    def popular(self, **kwargs):popular225,6679
+class TV_Seasons(TMDB):TV_Seasons242,7184
+    BASE_PATH = 'tv/{id}/season/{season_number}'BASE_PATH248,7314
+    URLS = {URLS249,7364
+    def __init__(self, id, season_number):__init__257,7543
+    def info(self, **kwargs):info262,7699
+    def credits(self, **kwargs):credits280,8280
+    def external_ids(self, **kwargs):external_ids293,8679
+    def images(self, **kwargs):images310,9176
+    def videos(self, **kwargs):videos329,9786
+class TV_Episodes(TMDB):TV_Episodes346,10275
+    BASE_PATH = 'tv/{series_id}/season/{season_number}/episode/{episode_number}'BASE_PATH352,10408
+    URLS = {URLS353,10490
+    def __init__(self, series_id, season_number, episode_number):__init__362,10699
+    def info(self, **kwargs):info368,10939
+    def credits(self, **kwargs):credits387,11578
+    def external_ids(self, **kwargs):external_ids400,12009
+    def images(self, **kwargs):images418,12552
+    def rating(self, **kwargs):rating433,13110
+    def videos(self, **kwargs):videos456,13810
+class Networks(TMDB):Networks473,14319
+    BASE_PATH = 'network'BASE_PATH479,14444
+    URLS = {URLS480,14471
+    def __init__(self, id):__init__484,14520
+    def info(self, **kwargs):info488,14615
+
+resources/lib/external/tmdbsimple/search.py,512
+from .base import TMDBTMDB14,275
+class Search(TMDB):Search16,301
+    BASE_PATH = 'search'BASE_PATH22,419
+    URLS = {URLS23,445
+    def movie(self, **kwargs):movie34,703
+    def collection(self, **kwargs):collection64,2086
+    def tv(self, **kwargs):tv82,2631
+    def person(self, **kwargs):person108,3752
+    def list(self, **kwargs):list133,4810
+    def company(self, **kwargs):company152,5442
+    def keyword(self, **kwargs):keyword169,5929
+    def multi(self, **kwargs):multi186,6415
+
+resources/lib/external/tmdbsimple/genres.py,319
+from .base import TMDBTMDB14,275
+class Genres(TMDB):Genres17,303
+    BASE_PATH = 'genre'BASE_PATH23,422
+    URLS = {URLS24,447
+    def __init__(self, id=0):__init__30,569
+    def list(self, **kwargs):list34,664
+    def list_tv(self, **kwargs):list_tv50,1069
+    def movies(self, **kwargs):movies66,1491
+
+resources/lib/external/tmdbsimple/movies.py,2177
+from .base import TMDBTMDB15,324
+class Movies(TMDB):Movies17,350
+    BASE_PATH = 'movie'BASE_PATH23,469
+    URLS = {URLS24,494
+    def __init__(self, id=0):__init__46,1250
+    def info(self, **kwargs):info50,1345
+    def alternative_titles(self, **kwargs):alternative_titles67,1873
+    def credits(self, **kwargs):credits84,2424
+    def images(self, **kwargs):images100,2910
+    def keywords(self, **kwargs):keywords119,3571
+    def releases(self, **kwargs):releases135,4047
+    def videos(self, **kwargs):videos152,4573
+    def translations(self, **kwargs):translations169,5083
+    def similar_movies(self, **kwargs):similar_movies185,5566
+    def reviews(self, **kwargs):reviews203,6186
+    def lists(self, **kwargs):lists221,6787
+    def changes(self, **kwargs):changes239,7382
+    def latest(self, **kwargs):latest261,8209
+    def upcoming(self, **kwargs):upcoming274,8560
+    def now_playing(self, **kwargs):now_playing292,9171
+    def popular(self, **kwargs):popular310,9799
+    def top_rated(self, **kwargs):top_rated328,10370
+    def account_states(self, **kwargs):account_states347,11010
+    def rating(self, **kwargs):rating365,11594
+class Collections(TMDB):Collections389,12256
+    BASE_PATH = 'collection'BASE_PATH395,12391
+    URLS = {URLS396,12421
+    def __init__(self, id):__init__401,12505
+    def info(self, **kwargs):info405,12603
+    def images(self, **kwargs):images427,13443
+class Companies(TMDB):Companies446,14082
+    BASE_PATH = 'company'BASE_PATH452,14211
+    URLS = {URLS453,14238
+    def __init__(self, id=0):__init__458,14322
+    def info(self, **kwargs):info462,14420
+    def movies(self, **kwargs):movies479,14937
+class Keywords(TMDB):Keywords497,15554
+    BASE_PATH = 'keyword'BASE_PATH503,15680
+    URLS = {URLS504,15707
+    def __init__(self, id):__init__509,15791
+    def info(self, **kwargs):info513,15886
+    def movies(self, **kwargs):movies526,16264
+class Reviews(TMDB):Reviews543,16796
+    BASE_PATH = 'review'BASE_PATH549,16919
+    URLS = {URLS550,16945
+    def __init__(self, id):__init__554,16994
+    def info(self, **kwargs):info558,17088
+
+resources/lib/external/tmdbsimple/base.py,1823
+import jsonjson14,261
+import requestsrequests15,274
+import osos18,313
+import resources.lib.external.requests_cache as requests_cacheresources19,324
+import resources.lib.external.requests_cache as requests_cachelib19,324
+import resources.lib.external.requests_cache as requests_cacheexternal19,324
+import resources.lib.external.requests_cache as requests_cacherequests_cache19,324
+import xbmcaddonxbmcaddon20,388
+import xbmcxbmc21,406
+base_path = xbmc.translatePath(xbmcaddon.Addon().getAddonInfo('profile'))base_path22,419
+class APIKeyError(Exception):APIKeyError24,496
+class TMDB(object):TMDB28,541
+    headers = {'Content-Type': 'application/json',headers29,562
+    BASE_PATH = ''BASE_PATH32,699
+    URLS = {}URLS33,719
+    def __init__(self):__init__35,736
+        from . import API_VERSIONAPI_VERSION36,761
+    def _get_path(self, key):_get_path40,919
+    def _get_id_path(self, key):_get_id_path43,1000
+    def _get_guest_session_id_path(self, key):_get_guest_session_id_path46,1091
+    def _get_credit_id_path(self, key):_get_credit_id_path50,1242
+    def _get_id_season_number_path(self, key):_get_id_season_number_path53,1354
+    def _get_series_id_season_number_episode_number_path(self, key):_get_series_id_season_number_episode_number_path57,1506
+    def _get_complete_url(self, path):_get_complete_url62,1743
+    def _get_params(self, params):_get_params65,1863
+        from . import API_KEYAPI_KEY66,1899
+    def _request(self, method, path, params=None, payload=None):_request77,2157
+    def _GET(self, path, params=None):_GET93,2653
+    def _POST(self, path, params=None, payload=None):_POST96,2753
+    def _DELETE(self, path, params=None, payload=None):_DELETE99,2886
+    def _set_attrs_to_values(self, response={}):_set_attrs_to_values102,3023
+
+resources/lib/external/tmdbsimple/configuration.py,524
+from .base import TMDBTMDB16,331
+class Configuration(TMDB):Configuration19,359
+    BASE_PATH = 'configuration'BASE_PATH25,499
+    URLS = {URLS26,532
+    def info(self, **kwargs):info30,580
+class Certifications(TMDB):Certifications44,936
+    BASE_PATH = 'certification'BASE_PATH50,1079
+    URLS = {URLS51,1112
+    def list(self, **kwargs):list55,1173
+class Timezones(TMDB):Timezones69,1548
+    BASE_PATH = 'timezones'BASE_PATH75,1676
+    URLS = {URLS76,1705
+    def list(self, **kwargs):list80,1754
+
+resources/lib/external/tmdbsimple/account.py,1962
+from .base import TMDBTMDB15,307
+class Account(TMDB):Account18,335
+    BASE_PATH = 'account'BASE_PATH25,521
+    URLS = {URLS26,548
+    def __init__(self, session_id):__init__39,992
+    def info(self, **kwargs):info43,1110
+    def lists(self, **kwargs):lists60,1637
+    def favorite_movies(self, **kwargs):favorite_movies78,2196
+    def favorite_tv(self, **kwargs):favorite_tv97,2831
+    def favorite(self, **kwargs):favorite116,3461
+    def rated_movies(self, **kwargs):rated_movies141,4268
+    def rated_tv(self, **kwargs):rated_tv160,4918
+    def watchlist_movies(self, **kwargs):watchlist_movies179,5562
+    def watchlist_tv(self, **kwargs):watchlist_tv198,6199
+    def watchlist(self, **kwargs):watchlist217,6831
+class Authentication(TMDB):Authentication242,7640
+    BASE_PATH = 'authentication'BASE_PATH249,7847
+    URLS = {URLS250,7881
+    def token_new(self, **kwargs):token_new257,8102
+    def token_validate_with_login(self, **kwargs):token_validate_with_login279,8817
+    def session_new(self, **kwargs):session_new298,9507
+    def guest_session_new(self, **kwargs):guest_session_new318,10171
+class GuestSessions(TMDB):GuestSessions331,10540
+    BASE_PATH = 'guest_session'BASE_PATH337,10681
+    URLS = {URLS338,10714
+    def __init__(self, guest_session_id=0):__init__342,10798
+    def rated_movies(self, **kwargs):rated_movies346,10942
+class Lists(TMDB):Lists365,11547
+    BASE_PATH = 'list'BASE_PATH371,11663
+    URLS = {URLS372,11687
+    def __init__(self, id=0, session_id=0):__init__382,11960
+    def info(self, **kwargs):info387,12106
+    def item_status(self, **kwargs):item_status400,12441
+    def create_list(self, **kwargs):create_list416,12888
+    def add_item(self, **kwargs):add_item444,13730
+    def remove_item(self, **kwargs):remove_item467,14362
+    def clear_list(self, **kwargs):clear_list490,14993
+    def delete_list(self, **kwargs):delete_list512,15639
+
+resources/lib/external/tmdbsimple/find.py,218
+from .base import TMDBTMDB14,269
+class Find(TMDB):Find16,295
+    BASE_PATH = 'find'BASE_PATH22,408
+    URLS = {URLS23,432
+    def __init__(self, id=0):__init__26,479
+    def info(self, **kwargs):info30,572
+
+resources/lib/external/tmdbsimple/discover.py,225
+from .base import TMDBTMDB14,281
+class Discover(TMDB):Discover16,307
+    BASE_PATH = 'discover'BASE_PATH22,432
+    URLS = {URLS23,460
+    def movie(self, **kwargs):movie28,533
+    def tv(self, **kwargs):tv83,3791
+
+resources/lib/external/tmdbsimple/changes.py,262
+from .base import TMDBTMDB14,278
+class Changes(TMDB):Changes16,304
+    BASE_PATH = ''BASE_PATH22,426
+    URLS = {URLS23,446
+    def movie(self, **kwargs):movie29,570
+    def person(self, **kwargs):person47,1141
+    def tv(self, **kwargs):tv65,1715
+
+resources/lib/external/tvdb_api/__init__.py,34
+from tvdb_api import TvdTvdb1,0
+
+resources/lib/external/tvdb_api/tvdb_api.py,3446
+import osos1,0
+import syssys2,11
+import timetime3,23
+import datetimedatetime4,36
+import zipfilezipfile5,53
+import requestsrequests6,69
+import resources.lib.external.requests_cache as requests_cacheresources7,86
+import resources.lib.external.requests_cache as requests_cachelib7,86
+import resources.lib.external.requests_cache as requests_cacheexternal7,86
+import resources.lib.external.requests_cache as requests_cacherequests_cache7,86
+from urllib import quote as url_quoteurl_quote8,150
+    import xml.etree.cElementTree as ElementTreexml11,197
+    import xml.etree.cElementTree as ElementTreeetree11,197
+    import xml.etree.cElementTree as ElementTreeElementTree11,197
+    import xml.etree.ElementTree as ElementTreexml13,268
+    import xml.etree.ElementTree as ElementTreeetree13,268
+    import xml.etree.ElementTree as ElementTreeElementTree13,268
+    import gzipgzip16,325
+    gzip = Nonegzip18,363
+int_types = (int, long)int_types20,382
+text_type = unicodetext_type21,407
+def to_bytes(text):to_bytes23,430
+class Show(dict):Show28,544
+    def __init__(self):__init__31,620
+    def __repr__(self):__repr__35,700
+    def get(self, key, default=None):get41,872
+    def __getitem__(self, key):__getitem__48,1024
+    def get_poster(self, language=None, default=None):get_poster59,1375
+class Season(dict):Season70,1875
+    def __init__(self, show=None, num=0):__init__71,1896
+    def __repr__(self):__repr__77,2061
+    def __getitem__(self, episode_number):__getitem__83,2209
+    def has_aired(self, flexible=False):has_aired86,2318
+    def get_poster(self, language=None, default=None):get_poster91,2492
+class Episode(dict):Episode102,3003
+    def __init__(self, season=None):__init__103,3025
+    def __repr__(self):__repr__108,3169
+    def __getitem__(self, key):__getitem__117,3520
+    def get_air_time(self):get_air_time120,3599
+    def has_aired(self, flexible=False):has_aired129,3865
+class Tvdb:Tvdb134,4043
+    def __init__(self, api_key, language="en", cache="."):__init__135,4056
+    def clear_cache(self):clear_cache159,5161
+    def search(self, series, year=None, language="en"):search165,5292
+    def search_by_imdb(self, imdb_id, year=None):search_by_imdb190,6213
+    def url_sid_full(self, sid, language):url_sid_full199,6575
+    def get_show(self, sid, language=None, full=False):get_show202,6683
+    def __getitem__(self, key):__getitem__227,7629
+    def _loadZip(self, url):_loadZip233,7824
+            from io import BytesIOBytesIO236,7963
+    def _loadUrl(self, url):_loadUrl242,8211
+    def _parseXML(self, content):_parseXML257,8550
+            import xml.etree.ElementTree as ElementTreexml264,8774
+            import xml.etree.ElementTree as ElementTreeetree264,8774
+            import xml.etree.ElementTree as ElementTreeElementTree264,8774
+    def _cleanData(self, data):_cleanData267,8893
+    def _setShowData(self, sid, key, value):_setShowData272,9031
+    def _setItem(self, sid, seas, ep, attrib, value):_setItem277,9203
+    def _parseEpisodesData(self, sid, et):_parseEpisodesData286,9629
+    def _parseSeriesData(self, sid, et):_parseSeriesData306,10473
+    def _parseBanners(self, sid, bannersEt):_parseBanners327,11212
+def date_to_timestamp(date_str, string_format="%Y-%m-%d"):date_to_timestamp359,12574
+    api = Tvdb()api371,12919
+    id = api.search('scrubs')[0]['id']id372,12937
+
+resources/lib/testings.py,329
+import osos20,785
+import xbmcxbmc22,796
+import xbmcaddonxbmcaddon23,808
+import xbmcvfsxbmcvfs24,825
+from koding import routeroute26,841
+from resources.lib.util.xml import JenListJenList27,866
+from resources.lib.util.xml import display_listdisplay_list28,909
+def testings(file_name="testings.xml"):testings32,1003
+
+default.py,2659
+import __builtin____builtin__19,758
+root_xml_url = ""  # url of the root xml fileroot_xml_url24,865
+import osos31,1177
+import syssys32,1187
+import kodingkoding34,1199
+import koding.router as routerkoding35,1213
+import koding.router as routerrouter35,1213
+import resources.lib.searchresources36,1244
+import resources.lib.searchlib36,1244
+import resources.lib.searchsearch36,1244
+import resources.lib.sourcesresources37,1272
+import resources.lib.sourceslib37,1272
+import resources.lib.sourcessources37,1272
+import resources.lib.testingsresources38,1301
+import resources.lib.testingslib38,1301
+import resources.lib.testingstestings38,1301
+import resources.lib.util.inforesources39,1331
+import resources.lib.util.infolib39,1331
+import resources.lib.util.infoutil39,1331
+import resources.lib.util.infoinfo39,1331
+import xbmcxbmc40,1362
+import xbmcaddonxbmcaddon41,1374
+import xbmcpluginxbmcplugin42,1391
+from koding import routeroute43,1409
+from resources.lib.util.xml import JenList, display_listJenList44,1434
+from resources.lib.util.xml import JenList, display_listdisplay_list44,1434
+import resources.lib.util.viewsresources45,1491
+import resources.lib.util.viewslib45,1491
+import resources.lib.util.viewsutil45,1491
+import resources.lib.util.viewsviews45,1491
+from language import get_string as __47,1559
+from resources.lib.plugin import run_hookrun_hook48,1596
+addon_id = xbmcaddon.Addon().getAddonInfo('id')addon_id51,1640
+addon_name = xbmcaddon.Addon().getAddonInfo('name')addon_name52,1688
+home_folder = xbmc.translatePath('special://home/')home_folder53,1740
+addon_folder = os.path.join(home_folder, 'addons')addon_folder54,1792
+art_path = os.path.join(addon_folder, addon_id)art_path55,1843
+content_type = "files"content_type56,1891
+def root():root60,1931
+def get_list_uncached(url):get_list_uncached90,2937
+def get_list(url):get_list107,3397
+def all_episodes(url):all_episodes124,3829
+    import picklepickle126,3876
+    import xbmcguixbmcgui127,3894
+def settings():settings147,4605
+def scraper_settings():scraper_settings152,4691
+def resolver_settings():resolver_settings157,4813
+def show_message(message):show_message162,4941
+    import xbmcguixbmcgui163,4968
+def clear_cache():clear_cache171,5140
+    import xbmcguixbmcgui172,5159
+        import nanscrapersnanscrapers180,5500
+def get_addon_url(mode, url=""):get_addon_url189,5800
+    import urlliburllib190,5833
+def first_run_wizard():first_run_wizard198,5982
+foldername = xbmc.getInfoLabel("Container.FolderName")foldername208,6181
+        content_type = "other"content_type219,6539
+
+language.py,3970
+_strings = {}_strings3,20
+    import polibpolib6,62
+    po = polib.pofile("resources/language/English/strings.po")po7,79
+        import re, subprocessre9,151
+        import re, subprocesssubprocess9,151
+        r = subprocess.check_output(["grep", "-hnr", "_([\'\"]", "."])r10,181
+        strings = re.compile("_\([\"'](.*?)[\"']\)", re.IGNORECASE).findall(r)strings11,252
+        translated = [m.msgid.lower().replace("'", "\\'") for m in po]translated12,331
+        missing = set([s for s in strings if s.lower() not in translated])missing13,402
+            ids_range = range(30000, 31000)ids_range15,497
+            ids_reserved = [int(m.msgctxt[1:]) for m in po]ids_reserved16,541
+            ids_available = [x for x in ids_range if x not in ids_reserved]ids_available17,601
+                id = ids_available.pop(0)id20,778
+                entry = polib.POEntry(msgid=text, msgstr=u'', msgctxt="#{0}".format(id))entry21,820
+    content = []content25,1020
+        content = me.readlines()content27,1073
+        content = content[:content.index("#GENERATED\n")+1]content28,1106
+    def get_string(t):get_string35,1409
+        import xbmc, xbmcaddonxbmc36,1432
+        import xbmc, xbmcaddonxbmcaddon36,1432
+_strings['import video library'] = 648video594,18657
+_strings['import video library'] = 648library594,18657
+_strings['import music library'] = 20197music1726,59540
+_strings['import music library'] = 20197library1726,59540
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204channel2353,84803
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204groups2353,84803
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204from2353,84803
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204the2353,84803
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204pvr2353,84803
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204backend2353,84803
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204if2353,84803
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204supported2353,84803
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204will2353,84803
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204delete2353,84803
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204user2353,84803
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204created2353,84803
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204groups2353,84803
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204if2353,84803
+_strings['import channel groups from the pvr backend (if supported). will delete user created groups if they\'re not found on the backend.'] = 36204they2353,84803
