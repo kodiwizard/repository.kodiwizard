@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<<<<<<< HEAD
 <addon id="plugin.program.kodiwizard" name="Team Wizard" version="1.0" provider-name="">
+=======
+<addon id="plugin.program.kodiwizard" name="Team Wizard" version="-" provider-name="Team Wizard">
+>>>>>>> parent of 75b1265... update
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
