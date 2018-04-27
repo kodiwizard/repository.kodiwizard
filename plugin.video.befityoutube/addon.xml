@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.befityoutube" name="BeFiT" version="1.3" provider-name="">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="qazwsxedc.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">BeFit Youtube</summary>
+        <description lang="en_GB">Get high-quality workouts and re-shape your body from head to toe with BeFit! Transform yourself with top fitness trainers like Denise Austin, Jane Fonda, Billy Blanks Jr., Scott Herman, Keaira LaShae and more. Take these result driven workouts with you anywhere to slim your waistline, challenge the abs and tone your arms, legs, chest, shoulders and booty with some of the best in the business. Are you ready to be fit? Subscribe for updates and become your best today with BeFit!</description>
+        <language>en pt</language>
+        <platform>all</platform>
+        <license>GPL-3.0</license>
+        <news></news>
+        <disclaimer>The author of this add-on is in no way affiliated with BeFit Youtube/befit.com</disclaimer>
+        <assets>
+        <icon>resources/images/icon.png</icon>
+        <fanart>resources/images/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

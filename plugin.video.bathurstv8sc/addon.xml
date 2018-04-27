@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.bathurstv8sc" name="Classic Bathurst 1000 races"	version="1.2"	provider-name=""> 
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="ngb.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Bathurst 1000 Races from the V8SC race series</summary>
+    <description lang="en">For those who love the Bathurst 1000 from the V8SC race series.  All videos are not hosted by us so if they go down or are not great quailty we apologise but we are just providing them to you in an easy to view format</description>
+    <disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+    <forum>n/a</forum>
+    <website>n/a</website>
+  </extension>
+</addon>

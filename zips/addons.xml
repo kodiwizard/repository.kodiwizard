@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<<<<<<< HEAD
-<addon id="plugin.program.kodiwizard" name="Team Wizard" version="1.0" provider-name="">
-=======
-<addon id="plugin.program.kodiwizard" name="Team Wizard" version="-" provider-name="Team Wizard">
->>>>>>> parent of 75b1265... update
+<addon id="plugin.program.kodiwizard" name="Team Wizard" version="2.0" provider-name="">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -19,6 +15,145 @@
 [CR]Get Team Wizard Builds</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.5mincrafts" name="5-Minute Crafts" version="1.1" provider-name="">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="news.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">5-Minute Crafts</summary>
+        <description lang="en_GB">Fun diy-projects, crafts, experience the joy of doing it yourself!</description>
+        <language>en pt</language>
+        <platform>all</platform>
+        <license>GPL-3.0</license>
+        <news></news>
+        <disclaimer>The author of this add-on is in no way affiliated with 5-Minute Crafts</disclaimer>
+        <assets>
+        <icon>resources/images/icon.png</icon>
+        <fanart>resources/images/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.adamsavagetested" name="Adam Savages Tested"	version="1.3"	provider-name="">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="ngb.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">This is the Youtube series hosted by ex mythbuster Adam Savage, some episodes contain science, maths, locgial thinking theories so please be warned :)</summary>
+    <description lang="en">This is the Youtube series hosted by ex mythbuster Adam Savage, some episodes contain science, maths, locgial thinking theories so please be warned :)  links are are all freely available on the internet.  We have just packaged it together in addon form.  Enjoy folks</description>
+    <disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+    <forum>n/a</forum>
+    <website>n/a</website>
+  </extension>
+</addon>
+
+<addon id="plugin.video.allblacks" name="All Blacks" version="1.2" provider-name="">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="allblacks.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">All Blacks</summary>
+        <description lang="en_GB">Official YouTube channel for The All Blacks New Zealand Rugby Team</description>
+        <language>en pt</language>
+        <platform>all</platform>
+        <license>GPL-3.0</license>
+        <news></news>
+        <disclaimer>This Addon is a 3rd party addon not made or endorsed by The All Blacks</disclaimer>
+        <assets>
+        <icon>resources/images/icon.png</icon>
+        <fanart>resources/images/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.bathurstv8sc" name="Classic Bathurst 1000 races"	version="1.2"	provider-name="">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="ngb.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Bathurst 1000 Races from the V8SC race series</summary>
+    <description lang="en">For those who love the Bathurst 1000 from the V8SC race series.  All videos are not hosted by us so if they go down or are not great quailty we apologise but we are just providing them to you in an easy to view format</description>
+    <disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+    <forum>n/a</forum>
+    <website>n/a</website>
+  </extension>
+</addon>
+
+<addon id="plugin.video.befityoutube" name="BeFiT" version="1.3" provider-name="">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="qazwsxedc.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">BeFit Youtube</summary>
+        <description lang="en_GB">Get high-quality workouts and re-shape your body from head to toe with BeFit! Transform yourself with top fitness trainers like Denise Austin, Jane Fonda, Billy Blanks Jr., Scott Herman, Keaira LaShae and more. Take these result driven workouts with you anywhere to slim your waistline, challenge the abs and tone your arms, legs, chest, shoulders and booty with some of the best in the business. Are you ready to be fit? Subscribe for updates and become your best today with BeFit!</description>
+        <language>en pt</language>
+        <platform>all</platform>
+        <license>GPL-3.0</license>
+        <news></news>
+        <disclaimer>The author of this add-on is in no way affiliated with BeFit Youtube/befit.com</disclaimer>
+        <assets>
+        <icon>resources/images/icon.png</icon>
+        <fanart>resources/images/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.FailArmy" name="FailArmy" version="1.1" provider-name="">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="failarmy.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">FailArmy Youtube</summary>
+        <description lang="en_GB">FailArmy is the world’s number one source for epic fail videos and hilarious compilations. We’re powered by fan submissions and feedback from all around the world, with over 30 million fans across digital platforms.
+		</description>
+        <language>en pt</language>
+        <platform>all</platform>
+        <license>GPL-3.0</license>
+        <news></news>
+        <disclaimer>The author of this add-on is in no way affiliated with FailArmy</disclaimer>
+        <assets>
+        <icon>resources/images/icon.png</icon>
+        <fanart>resources/images/fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="repository.kodiwizard" name="Kodi Wizard" version="0.0.1" provider-name="Kodi Wizard">
