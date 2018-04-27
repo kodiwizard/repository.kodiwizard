@@ -1,10 +1,9 @@
 ################################################################
-##  TeamX have built this addon from base code provided       ##
+##  this addon is from base code provided                     ##
 ##  by pipcan and with help from whufclee (NoobsAndNerds)     ##
-##  kiwiman has put in a few hours of work to find the links  ##
-##  and build this code.  tdbnz has assisted where able and   ##
-##  been a great sounding block for kiwiman while working     ##
-##                         on this.  Enjoy                    ##
+##  lots of hours been put to find the links                  ##
+##  and to build this code.   he assisted where able and      ##
+##  been a great sounding block for us                        ##
 ################################################################
 
 import os,requests,urllib,urllib2,re,xbmcplugin,xbmcaddon,xbmc,xbmcgui

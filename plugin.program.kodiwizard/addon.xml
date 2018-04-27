@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.kodiwizard" name="Team Wizard" version="1.0" provider-name="Team Wizard">
+<addon id="plugin.program.kodiwizard" name="Team Wizard" version="1.0" provider-name="">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -9,7 +9,9 @@
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Team Wizard</summary>
-    <description lang="en">Team Wizard[CR][CR]Get Team Wizard Builds</description>
+    <description lang="en">Team Wizard
+[CR]
+[CR]Get Team Wizard Builds</description>
     <platform>all</platform>
   </extension>
 </addon>

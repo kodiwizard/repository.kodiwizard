@@ -1,7 +1,6 @@
 
 # Addon is a fork of a known addon on kodi
 
-# Team X kodi
 
 # -*- coding: utf-8 -*-
 
