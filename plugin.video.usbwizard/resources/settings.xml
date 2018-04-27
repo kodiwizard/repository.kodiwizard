@@ -1,0 +1,5 @@
+<settings>
+    <category label="Zip Folder">
+        <setting id="zip" type="folder"    label="Choose USB/SDCARD Destination"      default=""/>
+    </category>
+</settings>
