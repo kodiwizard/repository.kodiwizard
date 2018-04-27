@@ -1,0 +1,12 @@
+v0.0.4
+Updated downloader to strip [] and contents betweent them
+Cleaned up APK Install code
+Cleaned up variable list
+Cleaned up Downlaoder
+Updated section code in submenus
+
+v0.0.1b
+Big fix for global var left in
+
+v0.0.1
+Initial Release

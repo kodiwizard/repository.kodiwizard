@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.stormchaserslive"
+       name="LiveStreaming Storm Chasers"
+       version="3.0"
+       provider-name="Kiwiman - Team X">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Pre-Release / Test Release of Live Storm Chaser Streams</summary>
+    <language>en</language>
+    <description lang="en">Pre-Release / Test Release of Live Storm Chaser Streams</description>
+     <platform>all</platform>
+  </extension>
+</addon>

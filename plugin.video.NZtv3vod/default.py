@@ -13,31 +13,31 @@ api_url = 'https://now-api.mediaworks.nz/now-api/v3/shows/'
 pluginhandle = int(sys.argv[1])
 
 def CATEGORIES():
-    r = requests.get(api_url)
-    match = re.compile('"showId":"(.+?)".+?"name":"(.+?)".+?showTile":"(.+?)"').findall(r.content)
-    for item in match:
-        for show_id, name, thumb in match:
-            show_url = api_url.strip('s/') + '/' + show_id
-            thumb = thumb.split('?width=')[0]
-            name_no_space = name.replace(' ', '-')
-            name_no_periods = name_no_space.replace('.','')
-            addDir3(name,show_url,3,thumb,'','')
+	r = requests.get(api_url)
+	match = re.compile('"showId":"(.+?)".+?"name":"(.+?)".+?showTile":"(.+?)"').findall(r.content)
+    # for item in match:
+	for show_id, name, thumb in match:
+		show_url = api_url.strip('s/') + '/' + show_id
+		thumb = thumb.split('?width=')[0]
+		name_no_space = name.replace(' ', '-')
+		name_no_periods = name_no_space.replace('.','')
+		addDir3(name,show_url,3,thumb,'','')
     
 def URL_SHOW(show_url,name):
     a = requests.get(show_url)
     match = re.compile('"extId":".+?","name":"(.+?)".+?"once":{"url":"(.+?)".+?"videoTile":"(.+?)"}').findall(a.content)
-    for episode, url, thumb in match:
-        req = requests.get(url)
-        match_show_url = re.compile('contenturi="(.+?)"').findall(req.content)
-        url_show = str(match_show_url).strip('[, ], \'')
-        addDir2(name+' - '+episode,url_show,1,thumb)
-		
+    for episode, url_show, thumb in match:
+		addDir2(name+' - '+episode,url_show,1,thumb)
+
 		
 def OPEN_URL(url_show):
-		listitem = xbmcgui.ListItem(url_show)
-		listitem.setInfo('video', {'Title': name})
-		play = xbmc.Player().play
-		play(url_show, listitem)
+	req = requests.get(url_show)
+	match_show_url = re.compile('contenturi="(.+?)"').findall(req.content)
+	url = str(match_show_url).strip('[, ], \'')
+	listitem = xbmcgui.ListItem(url)
+	listitem.setInfo('video', {'Title': name})
+	play = xbmc.Player().play
+	play(url, listitem)
     
     
 def get_params():
@@ -131,6 +131,8 @@ if mode==None or url==None or len(url)<1:
        
 elif mode==1:
         OPEN_URL(url)
+elif mode==2:
+        URL_EPISODE(url,name)
 elif mode==3:
         URL_SHOW(url,name)
 elif mode==4:
