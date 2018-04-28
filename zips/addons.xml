@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.kodiwizard" name="Team Wizard" version="3.1" provider-name="">
+<addon id="plugin.program.kodiwizard" name="Team Wizard" version="3.2" provider-name="">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -15,7 +15,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.5mincrafts" name="5-Minute Crafts" version="1.1" provider-name="">
+<addon id="plugin.video.5mincrafts" name="5-Minute Crafts" version="1.2" provider-name="">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
