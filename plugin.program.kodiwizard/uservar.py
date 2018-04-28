@@ -17,7 +17,7 @@ APKFILE        = 'http://'
 YOUTUBETITLE   = ''
 YOUTUBEFILE    = 'http://'
 # Text File for addon installer.  Leave as 'http://' to ignore
-ADDONFILE      = 'http://'
+ADDONFILE      = 'https://'
 # Text File for advanced settings.  Leave as 'http://' to ignore
 ADVANCEDFILE   = 'http://'
 
@@ -34,12 +34,12 @@ ART            = os.path.join(PATH, 'resources', 'art')
 # Example:  ICONMAINT     = os.path.join(ART, 'mainticon.png')
 #           ICONSETTINGS  = 'http://aftermathwizard.net/repo/wizard/settings.png'
 # Leave as http:// for default icon
-ICONBUILDS     = 'http://'
-ICONMAINT      = 'http://'
-ICONAPK        = 'http://'
-ICONADDONS     = 'http://'
-ICONYOUTUBE    = 'http://'
-ICONSAVE       = 'http://'
+ICONBUILDS     = 'https://findicons.com/files/icons/1890/my_toolbar/128/wizard.png'
+ICONMAINT      = 'https://findicons.com/files/icons/1890/my_toolbar/128/wizard.png'
+ICONAPK        = 'https://findicons.com/files/icons/1890/my_toolbar/128/wizard.png'
+ICONADDONS     = 'https://findicons.com/files/icons/1890/my_toolbar/128/wizard.png'
+ICONYOUTUBE    = 'https://findicons.com/files/icons/1890/my_toolbar/128/wizard.png'
+ICONSAVE       = 'https://findicons.com/files/icons/1890/my_toolbar/128/wizard.png'
 ICONTRAKT      = 'http://'
 ICONREAL       = 'http://'
 ICONLOGIN      = 'http://'
@@ -55,7 +55,7 @@ SPACER         = '='
 COLOR1         = 'dodgerblue'
 COLOR2         = 'white'
 # Primary menu items   / %s is the menu item and is required
-THEME1         = '[COLOR '+COLOR1+'][B][I]([COLOR '+COLOR2+'][/COLOR])[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR][/I]'
+THEME1         = '[COLOR '+COLOR1+'][B][COLOR '+COLOR2+']Team X[/COLOR][/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR]'
 # Build Names          / %s is the menu item and is required
 THEME2         = '[COLOR '+COLOR2+']%s[/COLOR]'
 # Alternate items      / %s is the menu item and is required
@@ -69,7 +69,7 @@ THEME5         = '[COLOR '+COLOR1+']Current Theme:[/COLOR] [COLOR '+COLOR2+']%s[
 # Enable 'Contact' menu item 'Yes' hide or 'No' dont hide
 HIDECONTACT    = 'No'
 # You can add \n to do line breaks
-CONTACT        = 'Thank you for choosing Aftermath Wizard.\r\n\r\nContact us on facebook at http://facebook.com'
+CONTACT        = 'Thank you for choosing Team X Wizard\r\n\r\nTwitter teamxkodi'
 #Images used for the contact window.  http:// for default icon and fanart
 CONTACTICON    = 'http://'
 CONTACTFANART  = 'http://'
@@ -79,7 +79,7 @@ CONTACTFANART  = 'http://'
 ### AUTO UPDATE #########################################
 ########## FOR THOSE WITH NO REPO #######################
 # Enable Auto Update 'Yes' or 'No'
-AUTOUPDATE     = 'Yes'
+AUTOUPDATE     = 'No'
 # Url to wizard version
 WIZARDFILE     = ''
 #########################################################
