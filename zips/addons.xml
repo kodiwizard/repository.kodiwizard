@@ -190,6 +190,20 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.listloader322" name="List Loader" version="1.0" provider-name="">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Add custom lists</summary>
+    <description lang="en">Add Custom Lists</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.matt3756" name="Matt3756" version="2.3" provider-name="">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
