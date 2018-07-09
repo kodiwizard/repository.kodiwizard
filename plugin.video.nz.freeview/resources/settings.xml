@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-    <setting label="30000" type="action" action="RunPlugin(plugin://plugin.video.nz.freeview?action=clear_cache)"/>
+  <setting label="30001" type="action" action="RunPlugin(plugin://$ID/?_route=clear)"/>
 </settings>

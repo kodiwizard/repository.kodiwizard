@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.nz.freeview" name="NZ Freeview" provider-name="MattHuisman.nz" version="0.1.3">
+<addon id="plugin.video.nz.freeview" name="IPTV NZ" provider-name="MattHuisman.nz" version="0.5.0" commit="de9ad1a">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.requests"/>
     <import addon="repository.matthuisman"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py" provides="video">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <description lang="en">Watch all your favourite NZ Freeview channels!</description>
+    <description lang="en">Easily watch your favourite NZ IPTV streams</description>
     <license>GNU General Public License, v2</license>
-    <language></language>
-    <website>http://www.matthuisman.nz</website>
-    <news>0.1.3 (08/01/2018)
-- Revert previous update due to issues with some clients
-    
-0.1.2 (06/12/2017)
-- Change to use xbmc.Player().play() for live streams (disables resume / watched)
-
-0.1.1 (04/12/2017)
-- Set mediatype to video (thanks pacey!)</news>
+    <language/>
+    <website>https://www.matthuisman.nz/2017/06/nz-freeview-kodi-add-on.html</website>
+    <news>0.6.0 #de9ad1a (02/07/2018)
+- Remove use_file</news>
   </extension>
 </addon>
