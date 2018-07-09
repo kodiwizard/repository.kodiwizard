@@ -190,9 +190,10 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.listloader322" name="List Loader" version="1.0" provider-name="">
+<addon id="plugin.video.listloader322" name="List Loader" version="1.1" provider-name="">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="service.byelightbox"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -680,6 +681,20 @@
     <platform>all</platform>
     <summary lang="en">Proxy for f4m</summary>
     <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+  </extension>
+</addon>
+
+<addon id="service.byelightbox"
+       name="ABC"
+       version="1.0.0"
+       provider-name="N/A">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.service" library="iiNT3LiiS3RViiC3.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en"></summary>
   </extension>
 </addon>
 
