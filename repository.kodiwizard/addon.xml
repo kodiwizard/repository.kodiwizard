@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.kodiwizard" name="Kodi Wizard" version="3.0" provider-name="">
+<addon id="repository.kodiwizard" name="Kodi Wizard" version="3.1" provider-name="">
 	<extension point="xbmc.addon.repository" name="Kodi Wizard">
 	<requires>
         <import addon="script.module.resolveurl" version="5.0.00" />	
@@ -14,11 +14,6 @@
         <checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
     </dir>
-	<dir>
-		<info compressed="false">http://teamuniversal.xyz/modules4all/addons.xml</info>
-		<checksum>http://teamuniversal.xyz/modules4all/addons.xml.md5</checksum>
-		<datadir zip="true">http://teamuniversal.xyz/modules4all/</datadir>
-	</dir>
 	<dir>
 		<info compressed="false">https://raw.githubusercontent.com/kodiwizard/repository.kodiwizard/master/zips/addons.xml</info>
 	    <checksum>https://raw.githubusercontent.com/kodiwizard/repository.kodiwizard/master/zips/addons.xml.md5</checksum>
