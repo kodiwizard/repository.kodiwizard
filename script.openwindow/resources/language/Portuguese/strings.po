@@ -1,0 +1,715 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TotalRevolution Addons\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: Portuguese\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "TRMC Settings"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Back"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Next"
+msgstr ""
+
+msgctxt "#30003"
+msgid "Set Language"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Select Language"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Time to set your preferred language. Please note you may find some third party add-ons are not available in your language, it varies on who the developer of that particular add-on is."
+msgstr ""
+
+msgctxt "#30006"
+msgid "Set Region & Timezone"
+msgstr ""
+
+msgctxt "#30007"
+msgid "Set Region"
+msgstr ""
+
+msgctxt "#30008"
+msgid "Set Country"
+msgstr ""
+
+msgctxt "#30009"
+msgid "Set Timezone"
+msgstr ""
+
+msgctxt "#30010"
+msgid "Ok so we have the language now we just need to know some more about your locality. Please select the correct region, country and timezone as this can affect your time settings which in turn can affect the online content you're able to access."
+msgstr ""
+
+msgctxt "#30011"
+msgid "Set Resolution"
+msgstr ""
+
+msgctxt "#30012"
+msgid "By default this device is set to 720p output, you may want to change this to 1080p if your TV supports that output.[CR][CR][COLOR=darkcyan][B]Press the [/COLOR][COLOR=maroon]back[/COLOR][COLOR=darkcyan] button when you're happy with your selection and you will return to this setup wizard.[/B][/COLOR]"
+msgstr ""
+
+msgctxt "#30013"
+msgid "Screen Calibration"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Calibrate Screen"
+msgstr ""
+
+msgctxt "#30015"
+msgid "Click on the Screen Calibration button to line up the pointer in the top left corner of the screen. If you can't see this on your screen press down on the remote until it's in view. Once happy click OK and do the same for the bottom right corner.[CR][CR][COLOR=darkcyan][B]Press the [/COLOR][COLOR=maroon]back[/COLOR][COLOR=darkcyan] button when calibration is complete[/B][/COLOR]"
+msgstr ""
+
+msgctxt "#30016"
+msgid "Set Weather"
+msgstr ""
+
+msgctxt "#30017"
+msgid "Set Weather Location"
+msgstr ""
+
+msgctxt "#30018"
+msgid "Get live weather reports so you can decide whether to stay in and watch the TV or go out and plan what you're going to watch on your new box later!"
+msgstr ""
+
+msgctxt "#30019"
+msgid "Setup Wi-Fi"
+msgstr ""
+
+msgctxt "#30020"
+msgid "Look and Feel"
+msgstr ""
+
+msgctxt "#30021"
+msgid "Choose Skin"
+msgstr ""
+
+msgctxt "#30022"
+msgid "Variety is the spice of life in this section you can choose which skin you'd like to use, we highly recommend the Aeon Nox TRev Mod as this has some great extra features but of course the choice is entirely yours."
+msgstr ""
+
+msgctxt "#30023"
+msgid "Install Keyword"
+msgstr ""
+
+msgctxt "#30024"
+msgid "Enter Code"
+msgstr ""
+
+msgctxt "#30025"
+msgid "This is an optional step, if you have a keyword you would like to install (great for installing previous backups) you can enter it here. You can always come back to this section at any time via the Startup Wizard in program add-ons."
+msgstr ""
+
+msgctxt "#30026"
+msgid "Add Local Content"
+msgstr ""
+
+msgctxt "#30027"
+msgid "Add Music"
+msgstr ""
+
+msgctxt "#30028"
+msgid "Add Photos"
+msgstr ""
+
+msgctxt "#30029"
+msgid "Add Videos"
+msgstr ""
+
+msgctxt "#30030"
+msgid "This is optional but if you have local content stored on an external HDD or on your network (such as your own movies, tv shows, music or photos) you can scan them into your device here."
+msgstr ""
+
+msgctxt "#30031"
+msgid "Enter Keyword"
+msgstr ""
+
+msgctxt "#30032"
+msgid "Web Installer"
+msgstr ""
+
+msgctxt "#30033"
+msgid "Downloading"
+msgstr ""
+
+msgctxt "#30034"
+msgid "Please wait"
+msgstr ""
+
+msgctxt "#30035"
+msgid "Extracting Zip Please Wait"
+msgstr ""
+
+msgctxt "#30036"
+msgid "Keyword Installer"
+msgstr ""
+
+msgctxt "#30037"
+msgid "Congratulations, your keyword has now been installed. Press OK to continue."
+msgstr ""
+
+msgctxt "#30038"
+msgid "Restoring Backup"
+msgstr ""
+
+msgctxt "#30039"
+msgid "Copying Files..."
+msgstr ""
+
+msgctxt "#30040"
+msgid "Your device will now reboot"
+msgstr ""
+
+msgctxt "#30041"
+msgid "Keyword error"
+msgstr ""
+
+msgctxt "#30042"
+msgid "The keyword you typed could not be installed."
+msgstr ""
+
+msgctxt "#30043"
+msgid "Please check the spelling and if you continue to receive this message it probably means that keyword is no longer available."
+msgstr ""
+
+msgctxt "#30044"
+msgid "No Skin Selected"
+msgstr ""
+
+msgctxt "#30045"
+msgid "You haven't chose a skin, are you sure you want to finish the setup? If you choose to continue without setting a skin you'll just have a basic setup and will be missing out on some great features."
+msgstr ""
+
+msgctxt "#30046"
+msgid "Finish setup"
+msgstr ""
+
+msgctxt "#30047"
+msgid "Let me set a skin"
+msgstr ""
+
+msgctxt "#30048"
+msgid "SETUP COMPLETE"
+msgstr ""
+
+msgctxt "#30049"
+msgid "Congratulations you've successully setup your box!"
+msgstr ""
+
+msgctxt "#30050"
+msgid "Your keyword will now be installed and the device will automatically restart."
+msgstr ""
+
+msgctxt "#30051"
+msgid "Installing Keyword Data"
+msgstr ""
+
+msgctxt "#30052"
+msgid "Extracting keyword data..."
+msgstr ""
+
+msgctxt "#30053"
+msgid "Error with zip"
+msgstr ""
+
+msgctxt "#30054"
+msgid "There was an error trying to install the keyword, you can try to reinstall this again via the settings menu after a reboot."
+msgstr ""
+
+msgctxt "#30055"
+msgid "System Requires Restart"
+msgstr ""
+
+msgctxt "#30056"
+msgid "Your system will now restart so all the new changes can be applied."
+msgstr ""
+
+msgctxt "#30057"
+msgid "Press OK to continue."
+msgstr ""
+
+msgctxt "#30058"
+msgid "DOWNLOADING UPDATES"
+msgstr ""
+
+msgctxt "#30059"
+msgid "Installing Updates"
+msgstr ""
+
+msgctxt "#30060"
+msgid "Error with update"
+msgstr ""
+
+msgctxt "#30061"
+msgid "There was an error trying to install the update, please reboot and try again."
+msgstr ""
+
+msgctxt "#30062"
+msgid "Register This Device"
+msgstr ""
+
+msgctxt "#30063"
+msgid "Register"
+msgstr ""
+
+msgctxt "#30064"
+msgid "In order to get the latest updates and use certain features you need to register your device. Click the button below for your unique registration link, once you complete your online registration and have clicked your email activation link press the NEXT button."
+msgstr ""
+
+msgctxt "#30065"
+msgid "[CR][CR]Status: [COLOR=green]REGISTERED[/COLOR]"
+msgstr ""
+
+msgctxt "#30066"
+msgid "[CR][CR]Status: [COLOR=red]NOT REGISTERED[/COLOR]"
+msgstr ""
+
+msgctxt "#30067"
+msgid "Skip Registration"
+msgstr ""
+
+msgctxt "#30068"
+msgid "Check Status"
+msgstr ""
+
+msgctxt "#30069"
+msgid "Please visit the following link on your phone, tablet or PC and fill out the registration form. Once completed come back and click OK.[CR][CR][COLOR=navy]"
+msgstr ""
+
+msgctxt "#30070"
+msgid "Yes, Skip Registration"
+msgstr ""
+
+msgctxt "#30071"
+msgid "Return To Registration"
+msgstr ""
+
+msgctxt "#30072"
+msgid "More Details"
+msgstr ""
+
+msgctxt "#30073"
+msgid "Are you absolutely sure you want to cancel the registration process? You will be missing out on LOTS of great features and will revert to a basic install. For more information on just some of the features registering a device will unlock please click the button below."
+msgstr ""
+
+msgctxt "#30074"
+msgid "Please wait...[CR][CR]The latest updates are currently being installed.[CR][CR]Please DO NOT restart your device during this time.[CR][CR]Your system will automatically restart once complete."
+msgstr ""
+
+msgctxt "#30075"
+msgid "Problem With Activation"
+msgstr ""
+
+msgctxt "#30076"
+msgid "There was a problem accessing the server, please check your internet connections and try again."
+msgstr ""
+
+msgctxt "#30077"
+msgid "Sorry, it seems there is either a temporary glitch on our server or an issue with your internet connection. Would you like to open in a vanilla state? You can then try for updates at a later time."
+msgstr ""
+
+msgctxt "#30078"
+msgid "Your device will now open into the standard basic install. Please check your internet connection then open the Startup Wizard add-on in programs so we can install the latest important updates."
+msgstr ""
+
+msgctxt "#30079"
+msgid "Registration Benefits"
+msgstr ""
+
+msgctxt "#30080"
+msgid "Once your device is registered you'll have access to all the great new features and updates. Below are just some of the things the development team are working on...[CR][CR][COLOR=blue]Live Updates[/COLOR][CR]Receive updates to your device as and when they're released. No longer will you have to scour the internet hunting down new content, a brand new content delivery system is being worked on.[CR][CR][COLOR=blue]Tailor To Your Own Taste[/COLOR][CR]Via the registration process you'll soon be able to set your unit up directly from the web, add different profiles for child friendly and adult only content and watch in amazement as your box sets itself up with no interaction required![CR][CR][COLOR=blue]Cloud Sync[/COLOR][CR]A truly groundbreaking and unique feature will soon be available where you can choose to share your whole setup with not only other devices on the same network but any of your friends or family around the globe. Whether you want to share your photos via one of the popular photo hosting sites or share your home videos - no matter what media it is you can now synchronise your whole device with anyone you want at the click of a button.[CR][CR][COLOR=blue]Plus MUCH More...[/COLOR][CR]The development team are continually working hard on brand new content that you'll only find on these units, make sure you don't miss out on the next great feature and register today!"
+msgstr ""
+
+msgctxt "#30081"
+msgid "Problem Detected"
+msgstr ""
+
+msgctxt "#30082"
+msgid "A fault has been detected, if you have a wired internet connection to the box try unplugging and click OK to try again. If this message re-appears please contact your local vendor."
+msgstr ""
+
+msgctxt "#30083"
+msgid "The latest updates are currently being installed, please do not restart during this time. The system will load up into the homepage very soon."
+msgstr ""
+
+msgctxt "#30084"
+msgid "Region Not Required"
+msgstr ""
+
+msgctxt "#30085"
+msgid "No region is required for the country you selected."
+msgstr ""
+
+msgctxt "#30086"
+msgid "Congratulations, your keyword has successfully been installed."
+msgstr ""
+
+msgctxt "#30087"
+msgid "Our unique Social TV software offers a simple way for users to share their experiences. Social shares are provided by the community and offer a great way of connecting with like-minded users.[CR][CR][COLOR=darkcyan][B]Please click the button below to enable/disable the Social TV function.[/B][/COLOR]"
+msgstr ""
+
+msgctxt "#30088"
+msgid "Adult Filter"
+msgstr ""
+
+msgctxt "#30089"
+msgid "Social Shares"
+msgstr ""
+
+msgctxt "#30090"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#30091"
+msgid "Social TV Shares"
+msgstr ""
+
+msgctxt "#30092"
+msgid "Due to the nature of social shares there is no way to guarantee the reliability or legality of any content provided. If you enable this option it's your responsibility to check the content provided is legal in your country prior to installing."
+msgstr ""
+
+msgctxt "#30093"
+msgid "Enable"
+msgstr ""
+
+msgctxt "#30094"
+msgid "Disable"
+msgstr ""
+
+msgctxt "#30095"
+msgid "'Very low quality streams may work'"
+msgstr ""
+
+msgctxt "#30096"
+msgid "Expect buffering, do not try HD"
+msgstr ""
+
+msgctxt "#30097"
+msgid "You should be ok for SD content only"
+msgstr ""
+
+msgctxt "#30098"
+msgid "SD/DVD quality should be ok, do not try HD"
+msgstr ""
+
+msgctxt "#30099"
+msgid "Some HD streams may struggle, SD will be fine"
+msgstr ""
+
+msgctxt "#30100"
+msgid "Most will be fine, some Blurays may struggle"
+msgstr ""
+
+msgctxt "#30101"
+msgid "All streams including HD should stream fine"
+msgstr ""
+
+msgctxt "#30102"
+msgid "Most will be fine, some Blurays may struggle"
+msgstr ""
+
+msgctxt "#30103"
+msgid "All streams including HD should stream fine"
+msgstr ""
+
+msgctxt "#30104"
+msgid "You can play all files with no problems"
+msgstr ""
+
+msgctxt "#30105"
+msgid "Speed Test - Results"
+msgstr ""
+
+msgctxt "#30106"
+msgid "[COLOR blue]Live Streams:[/COLOR] "
+msgstr ""
+
+msgctxt "#30107"
+msgid "[COLOR blue]Online Video:[/COLOR] "
+msgstr ""
+
+msgctxt "#30108"
+msgid "Unavailable"
+msgstr ""
+
+msgctxt "#30109"
+msgid "This function is currently not available on the platform you\'re running. Please manually change in system>appearance when booted into the main menu."
+msgstr ""
+
+msgctxt "#30110"
+msgid "SYSTEM CLOSING"
+msgstr ""
+
+msgctxt "#30111"
+msgid "Your system will now quit. When your system restarts your new setup should be correctly installed. Press OK to to be guided through the startup wizard."
+msgstr ""
+
+msgctxt "#30112"
+msgid "ERROR"
+msgstr ""
+
+msgctxt "#30113"
+msgid "Unable to download updates from server. Please try opening a web browser to make sure your internet is working correctly. Click OK to try again."
+msgstr ""
+
+msgctxt "#30114"
+msgid "TRMC Licence"
+msgstr ""
+
+msgctxt "#30115"
+msgid "Do you have a software licence to unlock the TRMC software? If not you can subscribe at [COLOR=dodgerblue]www.totalrevolution.tv[/COLOR]"
+msgstr ""
+
+msgctxt "#30116"
+msgid "This message will not be shown again, to access in future click on TRMC TV in programs."
+msgstr ""
+
+msgctxt "#30117"
+msgid "FAULT DETECTED"
+msgstr ""
+
+msgctxt "#30118"
+msgid "Please check you have your Wi-Fi and ethernet adaptors enabled in your system settings. If you continue to get this message you may want to consider a factory reset. If that fails you may have a faulty unit."
+msgstr ""
+
+msgctxt "#30119"
+msgid "REGISTRATION REQUIRED"
+msgstr ""
+
+msgctxt "#30120"
+msgid "Please complete your registration at the following page:"
+msgstr ""
+
+msgctxt "#30121"
+msgid "REGISTRATION IS COMPULSORY"
+msgstr ""
+
+msgctxt "#30122"
+msgid "In order to use all the great features of this box you must register. Please make sure you complete registration otherwise you will be left with a basic vanilla setup."
+msgstr ""
+
+msgctxt "#30123"
+msgid "NO CONNECTION"
+msgstr ""
+
+msgctxt "#30124"
+msgid "An internet connection is required to complete the setup. Please either connect via a wired (ethernet) connection or enter your Wi-Fi details."
+msgstr ""
+
+msgctxt "#30125"
+msgid "LICENSE REQUIRED"
+msgstr ""
+
+msgctxt "#30126"
+msgid "To use this feature please purchase a license."
+msgstr ""
+
+msgctxt "#30127"
+msgid "Once you have a valid license click on the [COLOR=dodgerblue]REGISTER[/COLOR] button in this startup wizard."
+msgstr ""
+
+msgctxt "#30128"
+msgid "[CR]Your MAC for this device is: [COLOR=dodgerblue]%s[/COLOR]"
+msgstr ""
+
+msgctxt "#30129"
+msgid "Decline"
+msgstr ""
+
+msgctxt "#30130"
+msgid "Agree"
+msgstr ""
+
+msgctxt "#30131"
+msgid "The provider facilitates, using various search engines and open-source code repositories, the searching by users for third party content.[CR][CR]The provider has no knowledge of, and cannot verify the security or legality of such third party content, and it is entirely a matter for the user to satisfy himself or herself regarding the safety or legality of such content, or the terms and conditions (including charging for content) which may be imposed by the owner of the content.[CR][CR][COLOR=gold]I agree that the content accessed via this device is solely my own responsibility, I am happy to install the most popular third party content and I take full responsibility of the content I choose to access.[/COLOR][CR][CR]Choosing to disagree with this agreement will result in a vanilla setup which comes with basic YouTube integration only."
+msgstr ""
+
+msgctxt "#30132"
+msgid "[COLOR=dodgerblue]Definitions:[/COLOR][CR]\"provider\" means <company_name>.[CR]\"users\" means the person using this device (you).[CR][CR]"
+msgstr ""
+
+msgctxt "#30133"
+msgid "Agreement"
+msgstr ""
+
+msgctxt "#30134"
+msgid "Calibration Part 1"
+msgstr ""
+
+msgctxt "#30135"
+msgid "Calibration Part 2"
+msgstr ""
+
+msgctxt "#30136"
+msgid "Audio Output Settings"
+msgstr ""
+
+msgctxt "#30137"
+msgid "Audio Settings"
+msgstr ""
+
+msgctxt "#30138"
+msgid "If you're just using a standard HDMI connection direct to your TV then the defaults should be fine. If you have a more advanced setup with a surround sound speaker system you may want to edit the options here. Please refer to your AV hardware documentation regarding which protocols you should be using."
+msgstr ""
+
+msgctxt "#30139"
+msgid "It's important you perform each of these options in the order shown. If the resolution on your TV looks ok then you can skip the resolution setting but you must set both calibration settings. Failure to perform this task may result in missing menu items due to them not fitting on your screen correctly."
+msgstr ""
+
+msgctxt "#30140"
+msgid "STARTUP WIZARD"
+msgstr ""
+
+msgctxt "#30141"
+msgid "We recommend you click the CHECK UPDATES button.[CR][CR]If you intend on never connecting the device to the internet you can choose the OFFLINE MODE."
+msgstr ""
+
+msgctxt "#30142"
+msgid "OFFLINE MODE"
+msgstr ""
+
+msgctxt "#30143"
+msgid "CHECK UPDATES"
+msgstr ""
+
+msgctxt "#30144"
+msgid "Language Selected: [COLOR=dodgerblue]%s[/COLOR]"
+msgstr ""
+
+msgctxt "#30145"
+msgid "Please confirm whether or not this is the language you intend on using for your device. Do you want to switch to this language?"
+msgstr ""
+
+msgctxt "#30146"
+msgid "If you have a bluetooth controller you can pair it by clicking the button below.[CR][CR]Put your bluetooth device into pairing mode and when you click on the \"Pair Device\" button below you should be able to connect the two.[CR][CR]If you have the IPEGA controller shown in the picture it press HOME and X simultaneously to enter bluetooth pairing mode."
+msgstr ""
+
+msgctxt "#30147"
+msgid "Pair Bluetooth Devices"
+msgstr ""
+
+msgctxt "#30148"
+msgid "Pair Device"
+msgstr ""
+
+msgctxt "#30149"
+msgid "Show Install Progress of Updates"
+msgstr ""
+
+msgctxt "#30150"
+msgid "Show progress for files larger than (MB)"
+msgstr ""
+
+msgctxt "#30151"
+msgid "When you click OK an on-screen keyboard will appear.\nTo register this device please enter your 20 digit license key."
+msgstr ""
+
+msgctxt "#30152"
+msgid "ENTER EMAIL"
+msgstr ""
+
+msgctxt "#30153"
+msgid "To verify this license key you need to enter the email address you registered with. Press OK to bring up another on-screen keyboard."
+msgstr ""
+
+msgctxt "#30154"
+msgid "NO WEATHER PROVIDER FOUND"
+msgstr ""
+
+msgctxt "#30155"
+msgid "No weather provider has been found on your system. Please select your preferred provider, Yahoo! has proven to be a reliable source for weather."
+msgstr ""
+
+msgctxt "#30156"
+msgid "INVALID EMAIL"
+msgstr ""
+
+msgctxt "#30157"
+msgid "Sorry the email you\'ve given does not match the one associated with this license. Please check and try again."
+msgstr ""
+
+msgctxt "#30158"
+msgid "INVALID LICENSE"
+msgstr ""
+
+msgctxt "#30159"
+msgid "Sorry the license key you\'ve given is not valid, please check and try again."
+msgstr ""
+
+msgctxt "#30160"
+msgid "The license key should be 20 digits long, or 23 if you\'re also entering the hyphens which split up each set of 5 digits. Please check and try again."
+msgstr ""
+
+msgctxt "#30161"
+msgid "PROBLEM DETECTED"
+msgstr ""
+
+msgctxt "#30162"
+msgid "Please try temporarily disabling your Wi-Fi and register using a wired connection only."
+msgstr ""
+
+msgctxt "#30163"
+msgid "UPDATE ADD-ON"
+msgstr ""
+
+msgctxt "#30164"
+msgid "Update available:"
+msgstr ""
+
+msgctxt "#30165"
+msgid "Would you like to install?"
+msgstr ""
+
+msgctxt "#30166"
+msgid "ANDROID APP: %s / %s"
+msgstr ""
+
+msgctxt "#30167"
+msgid "There are android apps which are required for install."
+msgstr ""
+
+msgctxt "#30168"
+msgid "There are android apps which are required for install."
+msgstr ""
+
+msgctxt "#30169"
+msgid "YES"
+msgstr ""
+
+msgctxt "#30170"
+msgid "NO"
+msgstr ""
+
+msgctxt "#30171"
+msgid "Click OK to retry setting up this device."
+msgstr ""
+
+msgctxt "#30172"
+msgid "Would you like to connect to the internet so you can complete the setup process or would you prefer to continue in offline mode?"
+msgstr ""
+
+msgctxt "#30173"
+msgid "OFFLINE"
+msgstr ""
+
+msgctxt "#30174"
+msgid "CONNECT"
+msgstr ""
+
+msgctxt "#30175"
+msgid "Your device is now in a vanilla state and does not have any of the latest updates installed. When you\'re ready to complete the setup process please click on Startup Wizard in your program add-ons section."
+msgstr ""

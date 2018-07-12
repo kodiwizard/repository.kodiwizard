@@ -1,0 +1,11 @@
+<settings>
+<!-- Set default to false if you don't want to allow the unit to boot up in offline mode -->
+	<setting id="offline"			type="bool"			default="true"	visible="false"/>
+
+<!--  Main visible settings -->
+	<setting id="debug"				type="bool"			default="true"	visible="true" 	label="Enable debug mode"/>
+	<setting id="autoupdate"		type="bool"			default="true"	visible="true" 	label="Auto Update Add-ons"/>
+	<setting id="showprogress"		type="bool"			default="true"	visible="true"	label="30149"/>
+ 	<setting id="showprogress_size"	type="labelenum"	default="40"	visible="true"	label="30150"	values="0|5|10|15|20|25|30|35|40|45|50|75|100|150"/>
+	<setting id="base"				type="text"			default="http://totalrevolution.tv/"	visible="false"/>
+</settings>
