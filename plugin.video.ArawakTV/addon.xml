@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.ArawakTV" name="Arawak • TV" version="2.6" provider-name="Simply Caz | CazWall.com">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.pyxbmct" version="1.1.4" />
+		<import addon="script.module.urlresolver" version="3.0.0"/>
+		<import addon="script.module.liveresolver" version="0.1.24"/>
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="repository.simplycaz" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Arawak • TV | CazWall.com</summary>
+		<description lang="en">Simply Caz, assisted by TeamX, created this add-on for all Caribbean / African viewers. It's in no way or form perfect, but it will play as a central hub for many Caribbean / African Live TV channels, Radio Stations and Video on Demand. "Peace in the Caribbean, peace in the Middle East and to God be the Glory!" </description>
+		<disclaimer lang="en">This is not an official KODI add-on, nor do CazWall.com own the streams. All of these links are available on the internet. Lots of research was only done to get them.</disclaimer>
+		<platform>all</platform>
+		<website>http://CazWall.com</website>
+		<email>support-team@cazwall.com</email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-06.jpg</screenshot>
+		</assets>
+		<news>
+- Live TV and Radio Countries - 
+Africa (Bonus),  Antigua, Bahamas, Barbados, Cuba, Curacao, Grenada, Guyana, Haiti, Jamaica, Puerto Rico,  St. Kitts and Nevis, St. Lucia, St. Vincent and Trinidad and Tobago, Turks and Caicos (Radio Only)
+
+- Bonus Live TV -
+Africa, U.S.A located at the bottom of Live TV.
+
+- 5,000+ Nollywood African Movies
+- OTHER VOD: Movies and Documentaries
+- Workout / Fitness Videos
+- Caribbean Music on Demand
+		</news>
+	</extension>
+</addon>

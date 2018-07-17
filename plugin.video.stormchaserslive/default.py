@@ -1,4 +1,10 @@
-##
+################################################################
+##  TeamX have built this addon from base code provided       ##
+##  by pipcan and with help from whufclee (NoobsAndNerds)     ##
+##  kiwiman has put in a few hours of work to find the links  ##
+##  and build this code.  tdbnz has assisted where able and   ##
+##  been a great sounding block for kiwiman while working     ##
+##                         on this.  Enjoy                    ##
 ################################################################
 
 import os,requests,urllib,urllib2,re,xbmcplugin,xbmcaddon,xbmc,xbmcgui
@@ -13,16 +19,16 @@ def CATEGORIES():
     for item in no_chasers_match:
         if item == "no-streams":
 			chaser = "**  No Storm Chasers Currently Streaming  **"
-			chaser_stream = 'https://fpdl.vimeocdn.com/vimeo-prod-skyfire-std-us/01/3599/2/67995158/709472360.mp4?token=1497922266-0x23955caec376c6461ce453fe0adad2cdadbc304b'
+			chaser_stream = 'https://gcs-vimeo.akamaized.net/exp=1523700354~acl=%2A%2F212908309.mp4%2A~hmac=31665fac9e58bee9ed134bbef87ddb551ab79586334b60a7987ea6914d12983a/vimeo-prod-skyfire-std-us/01/608/1/28040685/212908309.mp4'
 			addDir2(chaser,chaser_stream,1,'')
     else:
-        chaser_match = re.compile('.+?<a href="http://cdn(.+?)".+?data-title="(.+?)".+?\n.+?\n.+?<img src="(.+?)"').findall(r.content)
-        for stream_url, chaser, image in chaser_match:
-			stream_url = "http://cdn" + stream_url
+        chaser_match = re.compile('<a href="https://www.severestudios.com/(.+?)".+?data-title="(.+?) Live Stream".+?\n.+?\n.+?>(.+?) Watching.+?\n.+?>(.+?)<').findall(r.content)
+        for stream_url, chaser, numb, loc in chaser_match:
+			stream_url = "https://www.severestudios.com/%s" %stream_url
 			stream = requests.get(stream_url)
 			match_stream = re.compile('.+?<source src="(.+?)"').findall(stream.content)
 			for chaser_stream in match_stream:
-				addDir2(chaser,chaser_stream,1,'')
+				addDir2('[COLOR white]%s[/COLOR] (%s viewing) - [COLOR green]%s[/COLOR]' %(chaser,numb,loc),chaser_stream,1,'')
 
 def URL_SHOW(stream_url,chaser):
 	stream = requests.get(stream_url)

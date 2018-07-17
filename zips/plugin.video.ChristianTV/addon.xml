@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.ChristianTV" name="Christian • TV" version="2.2" provider-name="Simply Caz | CazWall.com">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.pyxbmct" version="1.1.4" />
+		<import addon="script.module.urlresolver" version="3.0.0"/>
+		<import addon="script.module.liveresolver" version="0.1.24"/>
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="repository.simplycaz" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+				<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Christian • TV | CazWall.com</summary>
+		<description lang="en">This add-on will allow you to watch about 147+ Christian Live TV Channels, Movies on Demand, Sermons on Demand and Christian YouTube Channels on Demand. "Peace in the Caribbean, peace in the Middle East and to God be the Glory!"</description>
+		<disclaimer lang="en">This is not an official KODI add-on, nor do CazWall.com own the streams. All of these links are available on the internet. Lots of research was only done to get them.</disclaimer>
+		<platform>all</platform>
+		<website>http://CazWall.com</website>
+		<email>support-team@cazwall.com</email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-06.jpg</screenshot>
+		</assets>
+		<news>
+- Live TV and Radio  Networks - 
+Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations), EWTN (8 Channels and 3 Radio Stations), Hope TV (7 Channels), Gospel Ministries International (6 Channels), God TV (5 Channels), CBN (3 Channels), Harvest TV (3 Channels) LLBN (3 Channels), SBN - Sonlife Broadcasting Network (3 Channels), Good News TV (2 Channels), Devine TV (2 Channels), Filmon TV (27 Channels), Daystar, The Impact Network, ADtv - Amazing Discoveries TV, AFTV - Amazing Facts TV, The Word Network, Shine TV (New Zealand), Firstlight (New Zealand), MTM HD (Jamaica),  Dove HD (Africa), Emmanuel TV (Africa), Loveworld Plus (Africa), SBN Telecadena (Puerto Rico), CDM TV (Puerto Rico), EBN TV (Puerto Rico), Teleadoracion (Puerto Rico), Unico TV (Puerto Rico), Salt + Light Catholic Media (Canada), GLC God Learning Channel, Apostolic Oneness, Cornerstone TV, CTN, GCN TV, Pastor Melissa Scott, CYC Christian Youth Channel, The Way TV, Al Kalema TV Network, KTO, Tele Louange, Shalom TV, Christ TV - Arabic, Life Church, His Channel, Family Friendly TV, Miracle Channel, Inspiration TV, NRB Network, Spirit TV, UCB - United Christian Broadcasts, and more!
+
+- Christian Movies in English, Spanish and Kids Selection
+- Christian YouTube for on Demand Sermons, Bible Studies and insightful information about the Bible.		
+		</news>
+	</extension>
+</addon>

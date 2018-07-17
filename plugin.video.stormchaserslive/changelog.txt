@@ -1,3 +1,6 @@
+Version 3.140418
+*Fixed broken code so working again now
+
 Version 0.0.2
 * **  No Storm Chasers Currently Streaming  ** added instead of blank list
 * Static Video added if you click on **  No Storm Chasers Currently Streaming  **
