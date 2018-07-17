@@ -1,0 +1,4 @@
+WINDOW_ID = 10000
+CLEAN_INTERVAL = (60*60*4) #4hours
+ROUTE_TAG = '_route'
+DEFAULT_EXPIRY = (60*60*24) #24hours

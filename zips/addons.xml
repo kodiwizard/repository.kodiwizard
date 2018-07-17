@@ -59,7 +59,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.allblacks" name="All Blacks" version="1.5" provider-name="">
+<addon id="plugin.video.allblacks" name="All Blacks" version="2.0" provider-name="">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
@@ -381,8 +381,9 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
 	</extension>
 </addon>
 
-<addon id="plugin.video.nz.freeview" name="IPTV NZ" provider-name="MattHuisman.nz" version="0.5.0" commit="de9ad1a">
+<addon id="plugin.video.nz.freeview" name="IPTV NZ" provider-name="MattHuisman.nz" version="0.7.0">
   <requires>
+    <import addon="script.module.matthuisman"/>
     <import addon="repository.matthuisman"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py" provides="video">
@@ -393,8 +394,12 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
     <license>GNU General Public License, v2</license>
     <language/>
     <website>https://www.matthuisman.nz/2017/06/nz-freeview-kodi-add-on.html</website>
-    <news>0.6.0 #de9ad1a (02/07/2018)
-- Remove use_file</news>
+    <news>0.7.0 #b62fe52 (17/07/2018)
+- Update for new settings
+- Disable view cache
+- Update to work with renamed test
+- UPDATE cache
+- Migrate to new module</news>
   </extension>
 </addon>
 
@@ -723,6 +728,26 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
     <platform>all</platform>
     <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
     <description lang="en"></description>
+  </extension>
+</addon>
+
+<addon id="script.module.matthuisman" name="MattHuisman.nz Common" provider-name="MattHuisman.nz" version="0.17.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <description lang="en">Common code required by various MattHuisman.nz addons</description>
+    <license>GNU General Public License, v2</license>
+    <language/>
+    <website>https://www.matthuisman.nz</website>
+    <news>0.17.0 #db5423d (17/07/2018)
+- Merge branch 'master' into stable
+- Fix missing excemption
+- Fix first run logic
+- Move settings into clasS
+- Redo settings</news>
   </extension>
 </addon>
 

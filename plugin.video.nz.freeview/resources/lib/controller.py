@@ -1,5 +1,8 @@
-from matthuisman.globs import config
+import requests
+
 from matthuisman.controller import Controller as BaseController
+
+from . import config
 
 class Controller(BaseController):
     def home(self, params):
@@ -12,36 +15,36 @@ class Controller(BaseController):
         
         slugs = sorted(channels, key=lambda k: channels[k].get('channel', channels[k]['title']))
         items = [channels[slug] for slug in slugs]
+        items.append({'title':'Settings', 'url': self._router.get(self.settings)})
 
         self._view.items(items, cache=False)
 
-    def toggle_ia(self, params):
+    def toggle_ia_hls(self, params):
         slug = params.get('slug')
 
         channels = self._get_channels()
         channel = channels[slug]
 
-        ia_enabled = config.SETTINGS.get('ia_enabled', [])
+        ia_hls_enabled = self._addon.data.get('ia_hls_enabled', [])
 
-        if slug in ia_enabled:
-            ia_enabled.remove(slug)
-            self._view.notification('Inputstream Disabled', heading=channel['title'], icon=channel['images']['thumb'])
+        if slug in ia_hls_enabled:
+            ia_hls_enabled.remove(slug)
+            self._view.notification('Inputstream HLS Disabled', heading=channel['title'], icon=channel['images']['thumb'])
         else:
-            ia_enabled.append(slug)
-            self._view.notification('Inputstream Enabled', heading=channel['title'], icon=channel['images']['thumb'])
+            ia_hls_enabled.append(slug)
+            self._view.notification('Inputstream HLS Enabled', heading=channel['title'], icon=channel['images']['thumb'])
 
-        config.SETTINGS.set('ia_enabled', ia_enabled)
+        self._addon.data['ia_hls_enabled'] = ia_hls_enabled
         self._view.refresh()
 
     def _get_channels(self):
         channels = {}
 
-        data = config.CACHE.get(config.M3U8_FILE)
-        if not data:
-            data = self._api.get(config.M3U8_FILE).json()
-            config.CACHE.set(config.M3U8_FILE, data, expiry=config.CACHE_TIME)
+        url = config.M3U8_FILE
+        func = lambda: requests.get(url).json()
+        data = self._addon.cache.function(url, func, expires=config.CACHE_TIME)
 
-        ia_enabled = config.SETTINGS.get('ia_enabled', [])
+        ia_hls_enabled = self._addon.data.get('ia_hls_enabled', [])
 
         for slug in data:
             channel = data[slug]
@@ -53,19 +56,19 @@ class Controller(BaseController):
             }
 
             context = []
-            use_ia = False
-
+            use_ia_hls = False
             url = channel['mjh_sub']
-            if url.startswith('http'):
-                use_ia = slug in ia_enabled
 
-                if use_ia:
+            if url.startswith('http'):
+                use_ia_hls = slug in ia_hls_enabled
+
+                if use_ia_hls:
                     url = channel['mjh_master']
-                    context.append(["Disable Inputstream", "XBMC.RunPlugin({0})".format(
-                        self._router.get(self.toggle_ia, {'slug': slug}))])
+                    context.append(["Disable Inputstream HLS", "XBMC.RunPlugin({0})".format(
+                        self._router.get(self.toggle_ia_hls, {'slug': slug}))])
                 else:
-                    context.append(["Enable Inputstream", "XBMC.RunPlugin({0})".format(
-                        self._router.get(self.toggle_ia, {'slug': slug}))])
+                    context.append(["Enable Inputstream HLS", "XBMC.RunPlugin({0})".format(
+                        self._router.get(self.toggle_ia_hls, {'slug': slug}))])
 
             item = {
                 'title': channel['name'],
@@ -77,7 +80,8 @@ class Controller(BaseController):
                 'video': channel.get('video',{}),
                 'audio': channel.get('audio',{}),
                 'context': context,
-                'options': {'type': 'hls' if use_ia else '', 'get_location': use_ia, 'headers': channel.get('headers', {})},
+                'vid_type': 'hls',
+                'options': {'use_ia_hls': use_ia_hls, 'get_location': use_ia_hls, 'headers': channel.get('headers', {})},
             }
 
             if channel.get('channel'):

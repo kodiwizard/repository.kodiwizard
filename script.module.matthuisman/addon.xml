@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.matthuisman" name="MattHuisman.nz Common" provider-name="MattHuisman.nz" version="0.17.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <description lang="en">Common code required by various MattHuisman.nz addons</description>
+    <license>GNU General Public License, v2</license>
+    <language/>
+    <website>https://www.matthuisman.nz</website>
+    <news>0.17.0 #db5423d (17/07/2018)
+- Merge branch 'master' into stable
+- Fix missing excemption
+- Fix first run logic
+- Move settings into clasS
+- Redo settings</news>
+  </extension>
+</addon>
