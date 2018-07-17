@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.kodiwizard" name="Team Wizard" version="3.2" provider-name="">
+<addon id="plugin.program.kodiwizard" name="Team Wizard" version="3.5" provider-name="">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -288,7 +288,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
   </extension>
 </addon>
 
-<addon id="plugin.video.matt3756" name="Matt3756" version="2.3" provider-name="">
+<addon id="plugin.video.matt3756" name="Matt3756" version="2.5" provider-name="">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
@@ -792,12 +792,12 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
 
 <addon id="service.byelightbox"
        name="ABC"
-       version="1.0.0"
+       version="2.0"
        provider-name="N/A">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
-  <extension point="xbmc.service" library="iiNT3LiiS3RViiC3.py" start="startup" />
+  <extension point="xbmc.service" library="yoyo.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en"></summary>
