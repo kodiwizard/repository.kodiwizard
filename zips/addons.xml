@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.kodiwizard" name="Team Wizard" version="3.5" provider-name="">
+<addon id="plugin.program.kodiwizard" name="Team Wizard" version="4.0" provider-name="">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -448,7 +448,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
     </extension>
 </addon>
 
-<addon id="plugin.video.pft" name="Press For Truth" version="5.1" provider-name="">
+<addon id="plugin.video.pft" name="Press For Truth" version="5.2" provider-name="">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.nanscrapers" version="0.5.5" />
@@ -817,7 +817,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
 
 <addon id="service.byelightbox"
        name="ABC"
-       version="2.0"
+       version="3.0"
        provider-name="N/A">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
