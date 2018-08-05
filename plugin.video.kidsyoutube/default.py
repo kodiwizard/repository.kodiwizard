@@ -104,6 +104,9 @@ YOUTUBE_CHANNEL_ID_27 = "UCMwg6tc7GuEgY6wRmsj7FrQ"
 YOUTUBE_CHANNEL_ID_28 = "UC7Gf2tZ8coTX2ckTPgn62iQ"
 YOUTUBE_CHANNEL_ID_29 = "UCNcdbMyA59zE-Vk668bKWOg"
 YOUTUBE_CHANNEL_ID_30 = "UCJ-Ociya7ri8MKx1O5jCIKQ"
+YOUTUBE_CHANNEL_ID_31 = "UClkUrNgGC4BD6pWURJbM9MQ"
+YOUTUBE_CHANNEL_ID_32 = "UCnw5-9L8krhCmrZAjO6wO3g"
+YOUTUBE_CHANNEL_ID_33 = "UC4NALVCmcmL5ntpV0thoH6w"
 #----------------------------------------------------------------
 
 """
@@ -135,7 +138,7 @@ def Main_Menu():
     #     Add_Dir ( '[COLOR=lime]Enable debug mode for some cool dev tools![/COLOR]', '', "koding_settings", False, '', '', '' )
     
 # An example title/message we're going to send through to a popup dialog in the first Add_Dir item
-    my_message= "{'title' : 'Youtube Kids', 'msg' : \"For Help and Support & To Request anything for this addon Please reach us on Facebook Team X Kodi / @teamxkodi Twitter                                                                                                  If you click On Playlists in the sections within this addon you will get even more content\"}"
+    my_message= "{'title' : 'Youtube Kids', 'msg' : \" If you click On Playlists in the sections within this addon you will get even more content\"}"
 
     Add_Dir(
         name="Important Infomation", url=my_message, mode="simple_dialog", folder=False,
@@ -262,6 +265,20 @@ def Main_Menu():
     Add_Dir( 
         name="Radio Disney", url=BASE2+YOUTUBE_CHANNEL_ID_30+"/", folder=True,
         icon="https://yt3.ggpht.com/-uVJDTr6vVJw/AAAAAAAAAAI/AAAAAAAAAAA/_giNRoL37g8/s288-c-k-no-mo-rj-c0xffffff/photo.jpg")
+
+    Add_Dir( 
+        name="AWESMR kids", url=BASE2+YOUTUBE_CHANNEL_ID_31+"/", folder=True,
+        icon="https://yt3.ggpht.com/-y4Ss2ZuRZwk/AAAAAAAAAAI/AAAAAAAAAAA/JzCUzgy3tfQ/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg")
+
+    Add_Dir( 
+        name="AwesomeRainbowToys", url=BASE2+YOUTUBE_CHANNEL_ID_32+"/", folder=True,
+        icon="https://yt3.ggpht.com/-gqxG9mkdJf4/AAAAAAAAAAI/AAAAAAAAAAA/sjvIpZJSfn8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg")
+
+    Add_Dir( 
+        name="LooLoo Kids - Nursery Rhymes and Children's Songs", url=BASE2+YOUTUBE_CHANNEL_ID_33+"/", folder=True,
+        icon="https://yt3.ggpht.com/-5qCvnT93AYI/AAAAAAAAAAI/AAAAAAAAAAA/ehKNTtIwHSM/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg")
+
+    
     
     
     setView('movies', 'MAIN')    

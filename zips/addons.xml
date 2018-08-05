@@ -59,7 +59,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.allblacks" name="All Blacks" version="2.0" provider-name="">
+<addon id="plugin.video.allblacks" name="All Blacks" version="2.1" provider-name="">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
@@ -147,7 +147,7 @@ Africa, U.S.A located at the bottom of Live TV.
   </extension>
 </addon>
 
-<addon id="plugin.video.befityoutube" name="BeFiT" version="1.5" provider-name="">
+<addon id="plugin.video.befityoutube" name="BeFiT" version="2.0" provider-name="">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
@@ -211,7 +211,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
 	</extension>
 </addon>
 
-<addon id="plugin.video.FailArmy" name="FailArmy" version="2.0" provider-name="">
+<addon id="plugin.video.FailArmy" name="FailArmy" version="2.1" provider-name="">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
@@ -237,7 +237,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
     </extension>
 </addon>
 
-<addon id="plugin.video.kidsyoutube" name="Youtube Kids" version="3.1" provider-name="">
+<addon id="plugin.video.kidsyoutube" name="Youtube Kids" version="3.3" provider-name="">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.nanscrapers" version="0.5.5" />
@@ -254,7 +254,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
 	</extension>
 </addon>
 
-<addon id="plugin.video.kodiyoutubers" name="[COLOR white]Kodi Youtubers[/COLOR]"	version="1.5"	provider-name="">
+<addon id="plugin.video.kodiyoutubers" name="[COLOR white]Kodi Youtubers[/COLOR]"	version="2.0"	provider-name="">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.addon.common" version="2.0.0"/>
@@ -618,7 +618,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
   </extension>
 </addon>
 
-<addon id="plugin.video.xopen" name="xopenload NSFW" version="0.27.11.2017" provider-name="">
+<addon id="plugin.video.xopen" name="xopenload NSFW" version="0.0.27.11.2017" provider-name="">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
