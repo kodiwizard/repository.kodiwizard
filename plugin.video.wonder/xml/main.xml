@@ -1,0 +1,18 @@
+<xml>
+  <dir>
+    <title>Formats</title>
+    <link>file://formats/main.xml</link>
+  </dir
+
+  <di>>
+    <title>Shared Lists</title>
+    <link>file://shared lists/main.xml</link>
+  </dir
+  
+  <item>
+  <title>Golf Channel</title>
+  <link>http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/4296k/prog.m3u8|X-Forwarded-For=209.239.112.104</link>
+  <thumbnail></thumbnail>
+</item>
+
+</xml>
