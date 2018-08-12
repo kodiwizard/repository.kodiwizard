@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<<<<<<< HEAD
 <addon id="repository.kodiwizardbackup" name="Kodi Wizard Backup" version="5.0" provider-name="">
+=======
+<addon id="repository.kodiwizardbackup" name="Kodi Wizard Backup" version="4.0" provider-name="">
+>>>>>>> 1f5e888765ec8c1a91685fe56e27bc70dd5311aa
 	<extension point="xbmc.addon.repository" name="Kodi Wizard">
 	<requires>
         <import addon="script.module.resolveurl" version="5.0.00" />	

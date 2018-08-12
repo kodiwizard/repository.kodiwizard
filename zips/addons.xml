@@ -669,10 +669,15 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
   </extension>
 </addon>
 
+<<<<<<< HEAD
 <addon id="repository.kodiwizard" name="Kodi Wizard" version="5.0" provider-name="">
+=======
+<addon id="repository.kodiwizard" name="Kodi Wizard" version="5.1" provider-name="">
+>>>>>>> 1f5e888765ec8c1a91685fe56e27bc70dd5311aa
 	<extension point="xbmc.addon.repository" name="Kodi Wizard">
 	<requires>
         <import addon="script.module.resolveurl" version="5.0.00" />
+        <import addon="repository.kodiwizardbackup" Version="5.0" />
         </requires>
 	<dir>
 		<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
@@ -702,7 +707,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
 	</extension>
 </addon>
 
-<addon id="repository.kodiwizardbackup" name="Kodi Wizard Backup" version="3.2" provider-name="">
+<addon id="repository.kodiwizardbackup" name="Kodi Wizard Backup" version="4.0" provider-name="">
 	<extension point="xbmc.addon.repository" name="Kodi Wizard">
 	<requires>
         <import addon="script.module.resolveurl" version="5.0.00" />
