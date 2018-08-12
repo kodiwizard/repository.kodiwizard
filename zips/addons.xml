@@ -702,6 +702,39 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
 	</extension>
 </addon>
 
+<addon id="repository.kodiwizardbackup" name="Kodi Wizard Backup" version="3.2" provider-name="">
+	<extension point="xbmc.addon.repository" name="Kodi Wizard">
+	<requires>
+        <import addon="script.module.resolveurl" version="5.0.00" />
+        </requires>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+	</dir>
+	<dir>
+	    <info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+    </dir>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/kodiwizard/repository.kodiwizard/master/zips/addons.xml</info>
+	    <checksum>https://raw.githubusercontent.com/kodiwizard/repository.kodiwizard/master/zips/addons.xml.md5</checksum>
+	    <datadir zip="true">https://raw.githubusercontent.com/kodiwizard/repository.kodiwizard/master/zips/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Kodi Wizard Builds</summary>
+		<description lang="en">Kodi Wizard Builds</description>
+		<genre></genre>
+	</extension>
+</addon>
+
 <addon id="repository.matthuisman" name="MattHuisman.nz Repository" provider-name="MattHuisman.nz" version="0.0.4">
   <extension point="xbmc.addon.repository" name="MattHuisman.nz Repository">
     <dir>
