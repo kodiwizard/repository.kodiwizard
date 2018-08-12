@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.kodiwizard" name="Kodi Wizard" version="4.0" provider-name="">
+<addon id="repository.kodiwizard" name="Kodi Wizard" version="4.1" provider-name="">
 	<extension point="xbmc.addon.repository" name="Kodi Wizard">
 	<requires>
         <import addon="script.module.resolveurl" version="5.0.00" />
-        <import addon="repository.kodiwizardbackup" />		
+        <import addon="repository.kodiwizardbackup" version="4.0" 		
         </requires>
 	<dir>
 		<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
