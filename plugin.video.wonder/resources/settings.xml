@@ -27,21 +27,21 @@
     <category label="30718">
         <setting label="30718" type="lsep"/>
         <setting label="30719" type="action" option="close"
-               action="RunPlugin(plugin://plugin.video.jen/?mode=clearCache)"/>
+               action="RunPlugin(plugin://plugin.video.wonder/?mode=clearCache)"/>
     </category>
 
     <!-- scraper settings -->
     <category label="Scrapers">
         <setting label="30733" type="lsep"/>
         <setting label="30734" type="action" option="close"
-               action="RunPlugin(plugin://plugin.video.jen/?mode=ScraperSettings)"/>
+               action="RunPlugin(plugin://plugin.video.wonder/?mode=ScraperSettings)"/>
         <setting id="use_link_dialog" label="30744" type="bool" default="true" />
         <setting id="link_fallthrough" label="30745" type="bool"	default="true" visible="eq(-1,true)"/>
     </category>
     <category label="Resolvers">
         <setting label="30741" type="lsep"/>
         <setting label="30742" type="action" option="close"
-               action="RunPlugin(plugin://plugin.video.jen/?mode=ResolverSettings)"/>
+               action="RunPlugin(plugin://plugin.video.wonder/?mode=ResolverSettings)"/>
 
         <!-- filtering settings -->
         <setting label="30735" type="lsep"/>
@@ -61,11 +61,11 @@
     <category label="Enter Own API's">
         <setting id="debug" type="bool" label="API's" default="false" visible="true"/>
         <setting id="first_run" label="first run" type="bool" default="false" visible="false"/>
-        <setting label="Cache Location" id="cache_folder" type="folder" default="special://profile/addon_data/plugin.video.jen/" visible="false"/>
-        <setting label="TVDB API Key" type="text" id="tvdb_api_key" option="hidden" default="API KEY GOES HERE" visible="eq(-3,true)"/>
-        <setting label="TMDB API Key" type="text" id="tmdb_api_key" option="hidden" default="API KEY GOES HERE" visible="eq(-4,true)"/>
-        <setting label="Trakt Client ID" type="text" id="trakt_api_client_id" option="hidden" default="API KEY GOES HERE" visible="eq(-5,true)"/>
-        <setting label="Trakt Client Secret" type="text" id="trakt_api_client_secret" option="hidden" visible="!eq(-1,true) + eq(-6,true)" default="API KEY GOES HERE"/>
+        <setting label="Cache Location" id="cache_folder" type="folder" default="special://profile/addon_data/plugin.video.wonder/" visible="false"/>
+        <setting label="TVDB API Key" type="text" id="tvdb_api_key" option="hidden" default="0629B785CE550C8D" visible="eq(-3,true)"/>
+        <setting label="TMDB API Key" type="text" id="tmdb_api_key" option="hidden" default="66e34e89e655538fecd4aca6dc820141" visible="eq(-4,true)"/>
+        <setting label="Trakt Client ID" type="text" id="trakt_api_client_id" option="hidden" default="948c4e2514db4f2cca33e737f5e73ae213e537d344b9916983e53e3cc2a1b21c" visible="eq(-5,true)"/>
+        <setting label="Trakt Client Secret" type="text" id="trakt_api_client_secret" option="hidden" visible="!eq(-1,true) + eq(-6,true)" default="140369c2c981732a7b183db2e9300065629b8b7417a149a0c4e098ebee8f692e"/>
         <setting label="Last.fm API Key" type="text" id="lastfm_api_key" option="hidden" default="API KEY GOES HERE" visible="eq(-7,true)"/>
         <setting label="Last.fm Secret" type="text" id="lastfm_secret" option="hidden" visible="!eq(-1,true) + eq(-8,true)" default="API KEY GOES HERE"/>
         <setting id="TRAKT_ACCESS_TOKEN" label="" type="text" visible="false"/>
@@ -76,7 +76,7 @@
     <!-- Dev mode - future features for playlisters and developers -->
     <category label="30770">
         <setting id="debug" type="bool" label="30758" default="false" visible="true"/>
-        <setting id="root_xml" type="text" label="30060" option="hidden" default="file://main.xml" visible="false"/>
+        <setting id="root_xml" type="text" label="30060" option="hidden" default="https://github.com/kodiwizard/wonder/raw/master/Menu/main.xml" visible="false"/>
         <setting id="message_xml_url" type="text" label="News File Location" option="hidden" default="file://news.xml" visible="false"/>
         <setting label="Current API Set Version" id="current_version" type="text" option="hidden" default="0" visible="false"/>
         <setting label="Enable Service Notification" id="enable_notification" type="bool" option="hidden" default="true" visible="false"/>
