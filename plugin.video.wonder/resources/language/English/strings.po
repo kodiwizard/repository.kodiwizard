@@ -1,6 +1,6 @@
-# Addon Name: Jen
-# Addon id: plugin.video.Jen
-# Addon Provider: Jen
+# Addon Name: Wonder
+# Addon id: plugin.video.woner
+# Addon Provider:
 msgid ""
 msgstr ""
 "Project-Id-Version: Jen\n"
