@@ -15,7 +15,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.5mincrafts" name="5-Minute Crafts" version="1.2" provider-name="">
+<addon id="plugin.video.5mincrafts" name="5-Minute Crafts" version="1.5" provider-name="">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
@@ -211,7 +211,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
 	</extension>
 </addon>
 
-<addon id="plugin.video.FailArmy" name="FailArmy" version="2.1" provider-name="">
+<addon id="plugin.video.FailArmy" name="FailArmy" version="2.2" provider-name="">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
@@ -237,7 +237,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
     </extension>
 </addon>
 
-<addon id="plugin.video.kidsyoutube" name="Youtube Kids" version="3.3" provider-name="">
+<addon id="plugin.video.kidsyoutube" name="Youtube Kids" version="3.5" provider-name="">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.nanscrapers" version="0.5.5" />
@@ -314,7 +314,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
     </extension>
 </addon>
 
-<addon id="plugin.video.mychurch" name="Church Online" version="2.5" provider-name="">
+<addon id="plugin.video.mychurch" name="Church Online" version="2.6" provider-name="">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
@@ -405,7 +405,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
 
 <addon id="plugin.video.NZtv3vod"
        name="NZ TV3 VOD Content"
-       version="2.0"
+       version="2.1"
        provider-name="">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
@@ -448,7 +448,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
     </extension>
 </addon>
 
-<addon id="plugin.video.pft" name="Press For Truth" version="5.2" provider-name="">
+<addon id="plugin.video.pft" name="Press For Truth" version="5.3" provider-name="">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.nanscrapers" version="0.5.5" />
@@ -497,7 +497,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
 
 <addon id="plugin.video.stormchaserslive"
        name="LiveStreaming Storm Chasers"
-       version="3.2"
+       version="3.3"
        provider-name="">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>

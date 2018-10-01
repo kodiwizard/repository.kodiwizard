@@ -107,6 +107,7 @@ YOUTUBE_CHANNEL_ID_30 = "UCJ-Ociya7ri8MKx1O5jCIKQ"
 YOUTUBE_CHANNEL_ID_31 = "UClkUrNgGC4BD6pWURJbM9MQ"
 YOUTUBE_CHANNEL_ID_32 = "UCnw5-9L8krhCmrZAjO6wO3g"
 YOUTUBE_CHANNEL_ID_33 = "UC4NALVCmcmL5ntpV0thoH6w"
+YOUTUBE_CHANNEL_ID_34 = "UCtgpDqkeOToveUgh8igrvXQ"
 #----------------------------------------------------------------
 
 """
@@ -278,7 +279,9 @@ def Main_Menu():
         name="LooLoo Kids - Nursery Rhymes and Children's Songs", url=BASE2+YOUTUBE_CHANNEL_ID_33+"/", folder=True,
         icon="https://yt3.ggpht.com/-5qCvnT93AYI/AAAAAAAAAAI/AAAAAAAAAAA/ehKNTtIwHSM/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg")
 
-    
+    Add_Dir( 
+        name="KidsTV123", url=BASE2+YOUTUBE_CHANNEL_ID_34+"/", folder=True,
+        icon="https://lh3.googleusercontent.com/a-/AN66SAzwYopRgWJo3xy3ABodwRgKxBDJpm6Rdq7Hsg=s176-c-k-c0x00ffffff-no-rj-mo")    
     
     
     setView('movies', 'MAIN')    
