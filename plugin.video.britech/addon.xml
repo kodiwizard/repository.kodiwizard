@@ -20,6 +20,7 @@ Britec Tech Tips - Malware Removal - PC Computer Repair" How To" videos and Trou
         <news></news>
         <disclaimer>The author of this add-on is in no way affiliated with Brictech</disclaimer>
         <assets>
+        <icon>resources/images/icon.png</icon>
         <fanart>resources/images/fanart.jpg</fanart>
         </assets>
     </extension>
