@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.britech" name="Britec" version="1.0" provider-name="">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="news.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Britec</summary>
+        <description lang="en_GB">Hardware Review, Sofware Review, Computer Builds, Malware Removal, Computer Repair. "Tech Review" "Product Review" Tutorials How-to "Custom Computer Builds" "Computer Builds" "Hardware Reviews" "Malware Removal" "Ransomware Removal" "Software Review" "PC Repair" "Hardware Repair" Trouble
+
+Britec Tech Tips - Malware Removal - PC Computer Repair" How To" videos and Troubleshooting and Repair videos to help those to help them selfs on how to fix computers.</description>
+        <language>en pt</language>
+        <platform>all</platform>
+        <license>GPL-3.0</license>
+        <news></news>
+        <disclaimer>The author of this add-on is in no way affiliated with Brictech</disclaimer>
+        <assets>
+        <fanart>resources/images/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
