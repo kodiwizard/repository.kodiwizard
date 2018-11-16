@@ -1,37 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<<<<<<< HEAD
-<addon id="repository.kodiwizardbackup" name="Kodi Wizard Backup" version="5.0" provider-name="">
-=======
-<addon id="repository.kodiwizardbackup" name="Kodi Wizard Backup" version="4.0" provider-name="">
->>>>>>> 1f5e888765ec8c1a91685fe56e27bc70dd5311aa
-	<extension point="xbmc.addon.repository" name="Kodi Wizard">
-	<requires>
-        <import addon="script.module.resolveurl" version="5.0.00" />	
-        </requires>
-	<dir>
-		<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
-	</dir>
-	<dir>
-	    <info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
-    </dir>
-	<dir>
-		<info compressed="false">https://raw.githubusercontent.com/kodiwizard/repository.kodiwizard/master/zips/addons.xml</info>
-	    <checksum>https://raw.githubusercontent.com/kodiwizard/repository.kodiwizard/master/zips/addons.xml.md5</checksum>
-	    <datadir zip="true">https://raw.githubusercontent.com/kodiwizard/repository.kodiwizard/master/zips/</datadir>	
-	</dir>
-	<dir>
-		<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-	</dir>
+<?xml version="1. " encoding="UTF-8" standalone="yes"?>
+<addon id="repository.kodiwizardbackup" name="Kodi Wizard Backup" version="3.0" provider-name="">
+	<extension point="xbmc.addon.repository" name="Kodi Wizard Backup">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/5Ghu789/repository.kodiwizardbackup/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/5Ghu789/repository.kodiwizardbackup/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/5Ghu789/repository.kodiwizardbackup/master/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Kodi Wizard Builds</summary>
-		<description lang="en">Kodi Wizard Builds</description>
+		<summary lang="en">Kodi Wizard Backup</summary>
+		<description lang="en">Kodi Wizard Backup</description>
 		<genre></genre>
 	</extension>
 </addon>
