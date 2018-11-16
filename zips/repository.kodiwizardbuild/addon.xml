@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.kodiwizardbuild" name="Kodi Wizard Build Repo" version="1.0" provider-name="">
+	<extension point="xbmc.addon.repository" name="Kodi Wizard Build Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/kodiwizard/repository.kodiwizardbuild/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kodiwizard/repository.kodiwizardbuild/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kodiwizard/repository.kodiwizardbuild/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Repo for my Builds</summary>
+		<description lang="en">Repo for my Builds</description>
+		<genre></genre>
+	</extension>
+</addon>
