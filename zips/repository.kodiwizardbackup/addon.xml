@@ -1,5 +1,5 @@
-<?xml version="1. " encoding="UTF-8" standalone="yes"?>
-<addon id="repository.kodiwizardbackup" name="Kodi Wizard Backup" version="5.3" provider-name="">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.kodiwizardbackup" name="Kodi Wizard Backup" version="7.0" provider-name="">
 	<extension point="xbmc.addon.repository" name="Kodi Wizard Backup">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>

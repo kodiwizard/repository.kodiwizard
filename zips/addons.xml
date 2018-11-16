@@ -743,7 +743,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
 	</extension>
 </addon>
 
-<addon id="repository.kodiwizard" name="Kodi Wizard" version="6.1" provider-name="">
+<addon id="repository.kodiwizard" name="Kodi Wizard" version="7.0" provider-name="">
 <extension point="xbmc.addon.repository" name="Kodi Wizard">
 	<requires>
         <import addon="script.module.resolveurl" version="5.0.00" />
@@ -777,7 +777,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
 	</extension>
 </addon>
 
-<addon id="repository.kodiwizardbackup" name="Kodi Wizard Backup" version="5.3" provider-name="">
+<addon id="repository.kodiwizardbackup" name="Kodi Wizard Backup" version="7.0" provider-name="">
 	<extension point="xbmc.addon.repository" name="Kodi Wizard Backup">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
