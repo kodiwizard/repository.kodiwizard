@@ -80,7 +80,7 @@ def makeRequest(url, headers=None):
 				
 def SKindex():
     addon_log("SKindex")
-    addDir('[B][COLOR blue]Merry Christmas & Happy New Year[/B][/COLOR]','[B][COLORblue]Merry Christmas & Happy New Year[/B][/COLOR]',4,'https://cdn1.iconfinder.com/data/icons/logotypes/32/square-twitter-256.png' ,  FANART,'','','','')	
+    addDir('[B][COLOR blue]Merry Christmas & Happy New Year[/B][/COLOR]','[B][COLORblue]Merry Christmas & Happy New Year[/B][/COLOR]',4,'https://cdn.vortala.com/childsites/uploads/2360/files/Merry-Christmas-and-Happy-New-Year-Banner-3.jpg' ,  FANART,'','','','')	
     addDir('[B][COLORwhite]MOVIE SEARCH (Under Maintance)[/B][/COLOR]','[B][COLORwhite](Under Maintance)[/B][/COLOR]',41,'https://freeiconshop.com/wp-content/uploads/edd/search-flat.png' ,  FANART,'','','','')
     #addDir('[B][I][COLORgold]New Catch Up TV[/B][/I][/COLOR]','[B][I][COLORgold]New Catch Up TV[/B][/I][/COLOR]',43,icon ,  FANART,'','','','')
     getData(_Edit.MainBase,'')
