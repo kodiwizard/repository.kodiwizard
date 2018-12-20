@@ -240,7 +240,7 @@ Angel TV (13 Channels), TBN (10 Channels), 3ABN (8 Channels | 2 Radio Stations),
 
 <addon id="plugin.video.christmas01010"
        name="Christmas Zone"
-       version="1.1"
+       version="1.2"
        provider-name="">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
