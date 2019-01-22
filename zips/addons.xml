@@ -194,7 +194,7 @@ You can change the region (default = Sydney) in the addon settings.</description
     </extension>
 </addon>
 
-<addon id="plugin.video.britech" name="Britec" version="1.0" provider-name="">
+<addon id="plugin.video.britech" name="Britec" version="1.1" provider-name="">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
