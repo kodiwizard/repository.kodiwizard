@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.speedworksv8s" name="SpeedWorks (V8)" version="1.0" provider-name="">
+<addon id="plugin.video.speedworksv8s" name="SpeedWorks (V8)" version="1.5" provider-name="">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.routing" version="0.2.0"/>
         <import addon="script.module.requests" version="2.12.4"/>
         <import addon="plugin.video.youtube"/>
     </requires>
-    <extension point="xbmc.python.pluginsource" library="failarmy.py">
+    <extension point="xbmc.python.pluginsource" library="speedworks.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -17,7 +17,7 @@
         <platform>all</platform>
         <license>GPL-3.0</license>
         <news></news>
-        <disclaimer>The author of this add-on is in no way affiliated with FailArmy</disclaimer>
+        <disclaimer>The author of this add-on is in no way affiliated with SpeedWorks Youtube </disclaimer>
         <assets>
         <icon>resources/images/icon.png</icon>
         <fanart>resources/images/fanart.jpg</fanart>
